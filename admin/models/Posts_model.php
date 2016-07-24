@@ -20,7 +20,6 @@ class Posts_model extends CI_Model
 
     function get($id = false)
     {
-//        $this->_visibility_rules($this->table);
         $this->db->where($this->table . '.is_deleted', 0);
         return $this->db
             ->select('posts.id, posts.title,posts.short_text, posts.text, posts.is_visible')
@@ -30,17 +29,7 @@ class Posts_model extends CI_Model
             ->get()->row_array();
     }
 
-    function get_post($offset)
-    {
-//        $this->_visibility_rules($this->table);
-        return $this->db
-            ->select('id,uri,title,short_text')
-            ->from($this->table)
-            ->limit($this->per_page, ($offset - 1) * $this->per_page)
-            ->get()->result_array();
-    }
-
-    function get_all_post()
+    function get_all_posts()
     {
         $this->db->where($this->table . '.is_deleted', 0);
         return $this->db
@@ -59,38 +48,28 @@ class Posts_model extends CI_Model
             ->get()->result_array();
     }
 
-    public function count_all($table)
-    {
-        return $this->db->count_all($table);
-    }
-
     public function del_post($id)
     {
-        $this->db
+        return $this->db
             ->limit(1)
             ->where('id', $id)
             ->set('is_deleted', '1')
             ->update($this->table);
-        $afftectedRows = $this->db->affected_rows();
-        return $afftectedRows == 1 ? true : false;
-
     }
 
     public function add_post($data)
     {
-        $this->db->limit(1)
+        return $this->db
+            ->limit(1)
             ->insert('posts', $data);
-        return $this->db->affected_rows();
-
     }
 
     public function update_post($data, $id)
     {
-        $this->db->limit(1)
+        return $this->db
+            ->limit(1)
             ->where('id', $id)
             ->set($data)
             ->update('posts');
-        return $this->db->affected_rows();
-
     }
 }

@@ -15,7 +15,7 @@ class Welcome extends CI_Controller
         $this->role_id = $this->dx_auth->get_role_id();
         if ($this->generic->is_admin($this->role_id)) {
              $this->load->model('Posts_model', 'posts');
-            $data['list'] = $this->posts->get_all_post();
+            $data['list'] = $this->posts->get_all_posts();
             $this->mustache->parse_view('content','/admin/dashboard', $data);
 
 
