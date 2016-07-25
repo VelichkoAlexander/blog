@@ -16,6 +16,7 @@ class Welcome extends CI_Controller
         if ($this->generic->is_admin($this->role_id)) {
              $this->load->model('Posts_model', 'posts');
             $data['list'] = $this->posts->get_all_posts();
+
             $this->mustache->parse_view('content','/admin/dashboard', $data);
 
 

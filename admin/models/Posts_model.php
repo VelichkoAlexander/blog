@@ -41,7 +41,7 @@ class Posts_model extends CI_Model
     public function get_tags($id)
     {
         return $this->db
-            ->select('tags.uri,tags.title')
+            ->select('tags.id,tags.title')
             ->from('tags')
             ->join('tags_posts_rel', 'tags_posts_rel.tag_id = tags.id')
             ->where('tags_posts_rel.post_id', $id)
@@ -71,5 +71,12 @@ class Posts_model extends CI_Model
             ->where('id', $id)
             ->set($data)
             ->update('posts');
+    }
+    public  function  check_uri($uri){
+        return $this->db
+                ->select('id')
+                ->from('posts')
+                ->where('uri', $uri)
+                ->get()->row();
     }
 }

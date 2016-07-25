@@ -25,7 +25,7 @@ class Posts extends CI_Controller
     public function edit_post($id = false)
     {
         if ($id && $data['post'] = $this->posts->get($id)) {
-            $data['post']['id'] = $id;
+            $data['tags'] = $this->posts->get_tags($id);
             $this->mustache->parse_view('content', 'edit_post/edit_post', $data);
             $this->mustache->render();
         } else {
@@ -38,8 +38,7 @@ class Posts extends CI_Controller
     public function update_post($id = false)
     {
         if ($id) {
-            $query = $this->generic->get_post('title,uri,short_text,text,is_visible');
-            $query['is_deleted'] = '0';
+            $query = $this->generic->get_post('title, uri, short_text, text, is_visible');
             $respond = $this->posts->update_post($query, $id);
             if ($respond) {
                 $this->output->set_output(json_encode(array('message' => 'all good')));
@@ -49,11 +48,10 @@ class Posts extends CI_Controller
         }
     }
 
-    //TODO: make normal meg
+    //TODO: make normal msg
     public function add_post()
     {
         $query = $this->generic->get_post('title,uri,short_text,text,is_visible');
-        $query['is_deleted'] = '0';
         $respond = $this->posts->add_post($query);
         if ($respond) {
             $this->output->set_output(json_encode(['message' => 'all good']));
@@ -63,7 +61,7 @@ class Posts extends CI_Controller
 
     }
 
-    //TODO: make normal meg
+    //TODO: make normal msg
     public function del_post($id = false)
     {
         if ($id && $data['result'] = $this->posts->del_post($id)) {
@@ -71,6 +69,16 @@ class Posts extends CI_Controller
         } else {
             redirect('/');
         }
+    }
+
+    public function check_uri($uri=false){
+
+        if($uri && $data = $this->posts->check_uri($uri)){
+            $this->output->set_output(json_encode(['uri' => '1']));
+        }else{
+            $this->output->set_output(json_encode(['uri' => '0']));
+        }
+
     }
 
 
