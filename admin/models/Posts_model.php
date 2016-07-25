@@ -38,7 +38,7 @@ class Posts_model extends CI_Model
             ->get()->result_array();
     }
 
-    public function get_tags($id)
+    public function get_tag($id)
     {
         return $this->db
             ->select('tags.id,tags.title')
@@ -46,6 +46,12 @@ class Posts_model extends CI_Model
             ->join('tags_posts_rel', 'tags_posts_rel.tag_id = tags.id')
             ->where('tags_posts_rel.post_id', $id)
             ->get()->result_array();
+    }
+    public function get_tags(){
+        return $this->db
+                ->select('title')
+                ->from('tags')
+                ->get()->result_array();
     }
 
     public function del_post($id)

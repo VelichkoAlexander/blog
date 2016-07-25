@@ -10,6 +10,7 @@
         setUpListeners: function () {
             $('#add_post').on('submit', app.submitForm);
             $('#title_post').on('keyup', app.checkUri);
+            app.getTags();
             $('#title_post').liTranslit({
                 elAlias: $('#slug_post')
             });
@@ -50,7 +51,6 @@
                 url: url + uri
             }).done(function (data) {
                 var arr = JSON.parse(data);
-                console.log(!+arr.uri);
                 if (+arr.uri) {
                     slug.parent().removeClass('has-success').addClass('has-error');
                     btn.attr('disabled', 'disabled');
@@ -59,6 +59,20 @@
                     btn.removeAttr('disabled');
                 }
             });
+
+        },
+        getTags: function () {
+            var url = '/admin/posts/get_tags';
+            $.ajax({
+                url: url
+            }).done(function (data) {
+                return $('#myTags').tagit({
+                    availableTags: JSON.parse(data)['tags'],
+                    autocomplete: {delay: 0, minLength: 2},
+                    showAutocompleteOnFocus: false,
+                    fieldName: "tags[]"
+                });
+            })
 
         }
 

@@ -25,7 +25,7 @@ class Posts extends CI_Controller
     public function edit_post($id = false)
     {
         if ($id && $data['post'] = $this->posts->get($id)) {
-            $data['tags'] = $this->posts->get_tags($id);
+            $data['tags'] = $this->posts->get_tag($id);
             $this->mustache->parse_view('content', 'edit_post/edit_post', $data);
             $this->mustache->render();
         } else {
@@ -53,6 +53,7 @@ class Posts extends CI_Controller
     {
         $query = $this->generic->get_post('title,uri,short_text,text,is_visible');
         $respond = $this->posts->add_post($query);
+
         if ($respond) {
             $this->output->set_output(json_encode(['message' => 'all good']));
         } else {
@@ -71,14 +72,29 @@ class Posts extends CI_Controller
         }
     }
 
-    public function check_uri($uri=false){
+    public function check_uri($uri = false)
+    {
 
-        if($uri && $data = $this->posts->check_uri($uri)){
+        if ($uri && $data = $this->posts->check_uri($uri)) {
             $this->output->set_output(json_encode(['uri' => '1']));
-        }else{
+        } else {
             $this->output->set_output(json_encode(['uri' => '0']));
         }
 
+    }
+
+    public function get_tags()
+    {
+        if ($data = $this->posts->get_tags()) {
+            $array = array();
+            foreach ($data as $item) {
+                $array[] = $item['title'];
+            }
+
+            $this->output->set_output(json_encode(['tags' => $array]));
+        } else {
+            $this->output->set_output(json_encode(['tags' => '']));
+        }
     }
 
 

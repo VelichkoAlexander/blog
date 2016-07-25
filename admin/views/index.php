@@ -16,9 +16,12 @@
 
     <!-- Custom CSS -->
     <link href="/admin/css/sb-admin-2.css" rel="stylesheet">
+    <link href="/admin/css/jquery.tagit.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,6 +56,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/admin/js/sb-admin-2.js"></script>
+    <script src="/admin/js/jquery-ui.min.js"></script>
+    <script src="/admin/js/tag-it.min.js"></script>
     <script src="/admin/js/jquery.liTranslit.js"></script>
     <script src="/admin/js/main.js"></script>
 

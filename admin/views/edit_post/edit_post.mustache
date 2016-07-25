@@ -53,71 +53,78 @@
         </div>
         <!-- /.navbar-static-side -->
     </nav>
-<div id="page-wrapper">
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Edit post</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    Edit post
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-lg-6 col-lg-push-3">
-                            {{#post}}
-                                <form id="add_post" role="form" action="/admin/posts/update_post/{{id}}" method="post">
-                                    <div class="form-group">
-                                        <label>Title</label>
-                                        <input id="title_post" class="form-control" name="title" value="{{title}}"
-                                               placeholder="Enter title">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Slug</label>
-                                        <input id="slug_post" class="form-control" name="uri" placeholder="" readonly>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Preview</label>
-                                        <input class="form-control" name="short_text" value="{{short_text}}"
-                                               placeholder="Enter short text">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Tags</label>
-                                        <input class="form-control" name="tags" value="{{#tags}} {{title}} {{/tags}}"
-                                               placeholder="Enter Tags">
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Visibility</label>
-                                        <select class="form-control" name="is_visible">
-
-                                            <option value="1">On</option>
-                                            <option {{^is_visible}}selected="selected"{{/is_visible}} value="0">Off</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Post text</label>
-                                <textarea class="form-control" name="text" rows="3">{{text}}</textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-default">Update</button>
-                                </form>
-                            {{/post}}
-                        </div>
-
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.panel-body -->
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Edit post</h1>
             </div>
-            <!-- /.panel -->
+            <!-- /.col-lg-12 -->
         </div>
-        <!-- /.col-lg-12 -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Edit post
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-lg-push-3">
+                                {{#post}}
+                                    <form id="add_post" role="form" action="/admin/posts/update_post/{{id}}"
+                                          method="post">
+                                        <div class="form-group">
+                                            <label>Title</label>
+                                            <input id="title_post" class="form-control" name="title" value="{{title}}"
+                                                   placeholder="Enter title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Slug</label>
+                                            <input id="slug_post" class="form-control" name="uri" placeholder=""
+                                                   readonly>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Preview</label>
+                                            <input class="form-control" name="short_text" value="{{short_text}}"
+                                                   placeholder="Enter short text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Tags</label>
+                                            <ul id="myTags">
+                                                {{#tags}}
+                                                    <li>{{title}}</li>
+                                                {{/tags}}
+                                            </ul>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Visibility</label>
+                                            <select class="form-control" name="is_visible">
+
+                                                <option value="1">On</option>
+                                                <option {{^is_visible}}selected="selected"{{/is_visible}} value="0">
+                                                    Off
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Post text</label>
+                                            <textarea class="form-control" name="text" rows="3">{{text}}</textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Update</button>
+                                    </form>
+                                {{/post}}
+                            </div>
+
+                        </div>
+                        <!-- /.row (nested) -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
     </div>
-</div>
-<!-- /#page-wrapper -->
+    <!-- /#page-wrapper -->
 
 </div>
 <!-- /#wrapper -->
