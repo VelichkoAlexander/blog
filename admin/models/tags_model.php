@@ -2,29 +2,74 @@
 
 class Tags_model extends CI_Model
 {
-    var $table = 'posts';
 
     public function __construct()
     {
         parent::__construct();
     }
 
-    function _visibility_rules($table = '')
+    public function index()
     {
-        $this->db->where($table . '.is_deleted', 0);
-        $this->db->where($table . '.is_visible', 1);
+     echo 'tags';
+    }
+    public function get_tag($id)
+    {
+        return $this->db
+            ->select('tags.id,tags.title')
+            ->from('tags')
+            ->join('tags_posts_rel', 'tags_posts_rel.tag_id = tags.id')
+            ->where('tags_posts_rel.post_id', $id)
+            ->get()->result_array();
     }
 
-    public function get_posts($uri)
+    public function get_tags()
     {
-        $this->_visibility_rules($this->table);
         return $this->db
-            ->select('posts.uri, posts.title, posts.short_text')
-            ->from('posts')
-            ->join('tags_posts_rel','tags_posts_rel.post_id = posts.id')
-            ->join('tags','tags.id = tags_posts_rel.tag_id')
-            ->where('tags.uri', $uri)
+            ->select('title')
+            ->from('tags')
             ->get()->result_array();
+    }
+
+
+    public function check_tag($title_tag)
+    {
+        return $this->db
+            ->select('id')
+            ->from('tags')
+            ->where('title', $title_tag)
+            ->get()->row();
+    }
+
+    public function update_tag($id, $tag_id)
+    {
+        return $this->db
+            ->limit(1)
+            ->where('id', $id)
+            ->set(array('tag_id' => $tag_id, 'post_id' => $id))
+            ->update('tags_posts_rel');
+    }
+
+    public function add_tag($tag)
+    {
+        $this->db
+            ->limit(1)
+            ->insert('tags', $tag);
+        return $this->db->insert_id();
+    }
+
+    public function rel_tag($tag_id, $post_id)
+    {
+        $this->db
+            ->limit(1)
+            ->insert('tags_posts_rel', array('tag_id' => $tag_id, 'post_id' => $post_id));
+    }
+
+    public function remove_tag($post_id)
+    {
+        return $this->db
+            ->where('post_id', $post_id)
+            ->delete('tags_posts_rel');
+
     }
 
 }

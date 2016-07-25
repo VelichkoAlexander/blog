@@ -4929,3 +4929,393 @@ DEBUG - 2016-07-22 15:21:31 --> Global POST, GET and COOKIE data sanitized
 INFO - 2016-07-22 15:21:31 --> Input Class Initialized
 INFO - 2016-07-22 15:21:31 --> Language Class Initialized
 ERROR - 2016-07-22 15:21:31 --> 404 Page Not Found: Css/semantic.min.css
+INFO - 2016-07-22 17:49:43 --> Config Class Initialized
+INFO - 2016-07-22 17:49:43 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:49:43 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:49:43 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:49:43 --> URI Class Initialized
+DEBUG - 2016-07-22 17:49:43 --> No URI present. Default controller set.
+INFO - 2016-07-22 17:49:43 --> Router Class Initialized
+INFO - 2016-07-22 17:49:43 --> Output Class Initialized
+INFO - 2016-07-22 17:49:43 --> Security Class Initialized
+DEBUG - 2016-07-22 17:49:43 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:49:43 --> Input Class Initialized
+INFO - 2016-07-22 17:49:43 --> Language Class Initialized
+INFO - 2016-07-22 17:49:43 --> Loader Class Initialized
+INFO - 2016-07-22 17:49:43 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:49:43 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:49:43 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:49:43 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:49:43 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:49:43 --> Forensics Console library loaded
+INFO - 2016-07-22 17:49:43 --> Model Class Initialized
+INFO - 2016-07-22 17:49:43 --> Model Class Initialized
+INFO - 2016-07-22 17:49:43 --> Controller Class Initialized
+INFO - 2016-07-22 17:49:43 --> Model Class Initialized
+INFO - 2016-07-22 17:49:43 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 17:49:43 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:49:43 --> File loaded: /var/www/public/blog/application/views/index.php
+INFO - 2016-07-22 17:49:43 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:49:43 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:49:43 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:49:43 --> File loaded: /var/www/public/blog/application/views/profiler_template.php
+INFO - 2016-07-22 17:49:43 --> Final output sent to browser
+DEBUG - 2016-07-22 17:49:43 --> Total execution time: 0.7648
+INFO - 2016-07-22 17:49:44 --> Config Class Initialized
+INFO - 2016-07-22 17:49:44 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:49:44 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:49:44 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:49:44 --> URI Class Initialized
+INFO - 2016-07-22 17:49:44 --> Router Class Initialized
+INFO - 2016-07-22 17:49:44 --> Output Class Initialized
+INFO - 2016-07-22 17:49:44 --> Security Class Initialized
+DEBUG - 2016-07-22 17:49:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:49:44 --> Input Class Initialized
+INFO - 2016-07-22 17:49:44 --> Language Class Initialized
+ERROR - 2016-07-22 17:49:44 --> 404 Page Not Found: Css/semantic.min.css
+INFO - 2016-07-22 20:02:54 --> Config Class Initialized
+INFO - 2016-07-22 20:02:54 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:02:54 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:02:54 --> URI Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> No URI present. Default controller set.
+INFO - 2016-07-22 20:02:54 --> Router Class Initialized
+INFO - 2016-07-22 20:02:54 --> Output Class Initialized
+INFO - 2016-07-22 20:02:54 --> Security Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:02:54 --> Input Class Initialized
+INFO - 2016-07-22 20:02:54 --> Language Class Initialized
+INFO - 2016-07-22 20:02:54 --> Loader Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:02:54 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:02:54 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:02:54 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> Forensics Console library loaded
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Controller Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 20:02:54 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 20:02:54 --> File loaded: /var/www/public/blog/application/views/index.php
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:02:54 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:02:54 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:02:54 --> File loaded: /var/www/public/blog/application/views/profiler_template.php
+INFO - 2016-07-22 20:02:54 --> Final output sent to browser
+DEBUG - 2016-07-22 20:02:54 --> Total execution time: 0.4426
+INFO - 2016-07-22 20:03:16 --> Config Class Initialized
+INFO - 2016-07-22 20:03:16 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:03:16 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:03:16 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:03:16 --> URI Class Initialized
+INFO - 2016-07-22 20:03:16 --> Router Class Initialized
+INFO - 2016-07-22 20:03:16 --> Output Class Initialized
+INFO - 2016-07-22 20:03:16 --> Security Class Initialized
+DEBUG - 2016-07-22 20:03:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:03:16 --> Input Class Initialized
+INFO - 2016-07-22 20:03:16 --> Language Class Initialized
+ERROR - 2016-07-22 20:03:16 --> 404 Page Not Found: Css/semantic.min.css
+INFO - 2016-07-22 20:05:25 --> Config Class Initialized
+INFO - 2016-07-22 20:05:25 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:25 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:25 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:25 --> URI Class Initialized
+INFO - 2016-07-22 20:05:25 --> Router Class Initialized
+INFO - 2016-07-22 20:05:25 --> Output Class Initialized
+INFO - 2016-07-22 20:05:25 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:25 --> Input Class Initialized
+INFO - 2016-07-22 20:05:25 --> Language Class Initialized
+INFO - 2016-07-22 20:05:25 --> Loader Class Initialized
+INFO - 2016-07-22 20:05:25 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:05:25 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:05:25 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:05:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:05:25 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:05:25 --> Forensics Console library loaded
+INFO - 2016-07-22 20:05:25 --> Model Class Initialized
+INFO - 2016-07-22 20:05:25 --> Model Class Initialized
+INFO - 2016-07-22 20:05:25 --> Controller Class Initialized
+INFO - 2016-07-22 20:05:25 --> Model Class Initialized
+INFO - 2016-07-22 20:05:25 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 20:05:25 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 20:05:25 --> File loaded: /var/www/public/blog/application/views/index.php
+INFO - 2016-07-22 20:05:25 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:05:25 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:05:25 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:05:25 --> File loaded: /var/www/public/blog/application/views/profiler_template.php
+INFO - 2016-07-22 20:05:25 --> Final output sent to browser
+DEBUG - 2016-07-22 20:05:25 --> Total execution time: 0.1659
+INFO - 2016-07-22 20:05:25 --> Config Class Initialized
+INFO - 2016-07-22 20:05:25 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:25 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:25 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:25 --> URI Class Initialized
+INFO - 2016-07-22 20:05:25 --> Router Class Initialized
+INFO - 2016-07-22 20:05:25 --> Output Class Initialized
+INFO - 2016-07-22 20:05:25 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:25 --> Input Class Initialized
+INFO - 2016-07-22 20:05:25 --> Language Class Initialized
+ERROR - 2016-07-22 20:05:25 --> 404 Page Not Found: Css/semantic.min.css
+INFO - 2016-07-22 20:05:27 --> Config Class Initialized
+INFO - 2016-07-22 20:05:27 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:27 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:27 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:27 --> URI Class Initialized
+DEBUG - 2016-07-22 20:05:27 --> No URI present. Default controller set.
+INFO - 2016-07-22 20:05:27 --> Router Class Initialized
+INFO - 2016-07-22 20:05:27 --> Output Class Initialized
+INFO - 2016-07-22 20:05:27 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:27 --> Input Class Initialized
+INFO - 2016-07-22 20:05:27 --> Language Class Initialized
+INFO - 2016-07-22 20:05:27 --> Loader Class Initialized
+INFO - 2016-07-22 20:05:27 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:05:27 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:05:27 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:05:27 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:05:27 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:05:27 --> Forensics Console library loaded
+INFO - 2016-07-22 20:05:27 --> Model Class Initialized
+INFO - 2016-07-22 20:05:27 --> Model Class Initialized
+INFO - 2016-07-22 20:05:27 --> Controller Class Initialized
+INFO - 2016-07-22 20:05:27 --> Model Class Initialized
+INFO - 2016-07-22 20:05:27 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 20:05:27 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 20:05:27 --> File loaded: /var/www/public/blog/application/views/index.php
+INFO - 2016-07-22 20:05:27 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:05:27 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:05:27 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:05:27 --> File loaded: /var/www/public/blog/application/views/profiler_template.php
+INFO - 2016-07-22 20:05:27 --> Final output sent to browser
+DEBUG - 2016-07-22 20:05:27 --> Total execution time: 0.1590
+INFO - 2016-07-22 20:05:27 --> Config Class Initialized
+INFO - 2016-07-22 20:05:27 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:27 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:27 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:27 --> URI Class Initialized
+INFO - 2016-07-22 20:05:27 --> Router Class Initialized
+INFO - 2016-07-22 20:05:27 --> Output Class Initialized
+INFO - 2016-07-22 20:05:27 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:27 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:27 --> Input Class Initialized
+INFO - 2016-07-22 20:05:27 --> Language Class Initialized
+ERROR - 2016-07-22 20:05:27 --> 404 Page Not Found: Css/semantic.min.css
+INFO - 2016-07-22 20:05:28 --> Config Class Initialized
+INFO - 2016-07-22 20:05:28 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:28 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:28 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:28 --> URI Class Initialized
+INFO - 2016-07-22 20:05:28 --> Router Class Initialized
+INFO - 2016-07-22 20:05:28 --> Output Class Initialized
+INFO - 2016-07-22 20:05:28 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:28 --> Input Class Initialized
+INFO - 2016-07-22 20:05:28 --> Language Class Initialized
+INFO - 2016-07-22 20:05:28 --> Loader Class Initialized
+INFO - 2016-07-22 20:05:28 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:05:28 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:05:28 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:05:28 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:05:28 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:05:28 --> Forensics Console library loaded
+INFO - 2016-07-22 20:05:28 --> Model Class Initialized
+INFO - 2016-07-22 20:05:28 --> Model Class Initialized
+INFO - 2016-07-22 20:05:28 --> Controller Class Initialized
+INFO - 2016-07-22 20:05:28 --> Model Class Initialized
+INFO - 2016-07-22 20:05:28 --> Helper loaded: date_helper
+INFO - 2016-07-22 20:05:28 --> File loaded: /var/www/public/blog/application/views/index.php
+INFO - 2016-07-22 20:05:28 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:05:28 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:05:28 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:05:28 --> File loaded: /var/www/public/blog/application/views/profiler_template.php
+INFO - 2016-07-22 20:05:28 --> Final output sent to browser
+DEBUG - 2016-07-22 20:05:28 --> Total execution time: 0.1907
+INFO - 2016-07-22 20:05:28 --> Config Class Initialized
+INFO - 2016-07-22 20:05:28 --> Hooks Class Initialized
+INFO - 2016-07-22 20:05:28 --> Config Class Initialized
+INFO - 2016-07-22 20:05:28 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:28 --> UTF-8 Support Enabled
+DEBUG - 2016-07-22 20:05:28 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:28 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:28 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:28 --> URI Class Initialized
+INFO - 2016-07-22 20:05:28 --> URI Class Initialized
+INFO - 2016-07-22 20:05:28 --> Router Class Initialized
+INFO - 2016-07-22 20:05:28 --> Router Class Initialized
+INFO - 2016-07-22 20:05:28 --> Output Class Initialized
+INFO - 2016-07-22 20:05:28 --> Output Class Initialized
+INFO - 2016-07-22 20:05:28 --> Security Class Initialized
+INFO - 2016-07-22 20:05:28 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:28 --> Input Class Initialized
+DEBUG - 2016-07-22 20:05:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:28 --> Input Class Initialized
+INFO - 2016-07-22 20:05:28 --> Language Class Initialized
+INFO - 2016-07-22 20:05:28 --> Language Class Initialized
+ERROR - 2016-07-22 20:05:28 --> 404 Page Not Found: Posts/bower_components
+ERROR - 2016-07-22 20:05:28 --> 404 Page Not Found: Css/semantic.min.css
+INFO - 2016-07-22 20:05:30 --> Config Class Initialized
+INFO - 2016-07-22 20:05:30 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:30 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:30 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:30 --> URI Class Initialized
+INFO - 2016-07-22 20:05:30 --> Router Class Initialized
+INFO - 2016-07-22 20:05:30 --> Output Class Initialized
+INFO - 2016-07-22 20:05:30 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:30 --> Input Class Initialized
+INFO - 2016-07-22 20:05:30 --> Language Class Initialized
+INFO - 2016-07-22 20:05:30 --> Loader Class Initialized
+INFO - 2016-07-22 20:05:30 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:05:30 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:05:30 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:05:30 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:05:30 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:05:30 --> Forensics Console library loaded
+INFO - 2016-07-22 20:05:30 --> Model Class Initialized
+INFO - 2016-07-22 20:05:30 --> Model Class Initialized
+INFO - 2016-07-22 20:05:30 --> Controller Class Initialized
+INFO - 2016-07-22 20:05:30 --> Model Class Initialized
+INFO - 2016-07-22 20:05:30 --> File loaded: /var/www/public/blog/application/views/index.php
+INFO - 2016-07-22 20:05:30 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:05:30 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:05:30 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:05:30 --> File loaded: /var/www/public/blog/application/views/profiler_template.php
+INFO - 2016-07-22 20:05:30 --> Final output sent to browser
+DEBUG - 2016-07-22 20:05:30 --> Total execution time: 0.2413
+INFO - 2016-07-22 20:05:30 --> Config Class Initialized
+INFO - 2016-07-22 20:05:30 --> Config Class Initialized
+INFO - 2016-07-22 20:05:30 --> Hooks Class Initialized
+INFO - 2016-07-22 20:05:30 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:30 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:30 --> Utf8 Class Initialized
+DEBUG - 2016-07-22 20:05:30 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:30 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:30 --> URI Class Initialized
+INFO - 2016-07-22 20:05:30 --> URI Class Initialized
+INFO - 2016-07-22 20:05:30 --> Router Class Initialized
+INFO - 2016-07-22 20:05:30 --> Router Class Initialized
+INFO - 2016-07-22 20:05:30 --> Output Class Initialized
+INFO - 2016-07-22 20:05:30 --> Output Class Initialized
+INFO - 2016-07-22 20:05:30 --> Security Class Initialized
+INFO - 2016-07-22 20:05:30 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:30 --> Input Class Initialized
+DEBUG - 2016-07-22 20:05:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:30 --> Language Class Initialized
+INFO - 2016-07-22 20:05:30 --> Input Class Initialized
+INFO - 2016-07-22 20:05:30 --> Language Class Initialized
+ERROR - 2016-07-22 20:05:30 --> 404 Page Not Found: Css/semantic.min.css
+ERROR - 2016-07-22 20:05:30 --> 404 Page Not Found: Tags/bower_components
+INFO - 2016-07-22 20:05:31 --> Config Class Initialized
+INFO - 2016-07-22 20:05:31 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:31 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:31 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:31 --> URI Class Initialized
+INFO - 2016-07-22 20:05:31 --> Router Class Initialized
+INFO - 2016-07-22 20:05:31 --> Output Class Initialized
+INFO - 2016-07-22 20:05:31 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:31 --> Input Class Initialized
+INFO - 2016-07-22 20:05:31 --> Language Class Initialized
+INFO - 2016-07-22 20:05:31 --> Loader Class Initialized
+INFO - 2016-07-22 20:05:31 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:05:31 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:05:31 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:05:31 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:05:31 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:05:31 --> Forensics Console library loaded
+INFO - 2016-07-22 20:05:31 --> Model Class Initialized
+INFO - 2016-07-22 20:05:31 --> Model Class Initialized
+INFO - 2016-07-22 20:05:31 --> Controller Class Initialized
+INFO - 2016-07-22 20:05:31 --> Model Class Initialized
+INFO - 2016-07-22 20:05:31 --> Helper loaded: date_helper
+INFO - 2016-07-22 20:05:31 --> File loaded: /var/www/public/blog/application/views/index.php
+INFO - 2016-07-22 20:05:31 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:05:31 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:05:31 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:05:31 --> File loaded: /var/www/public/blog/application/views/profiler_template.php
+INFO - 2016-07-22 20:05:31 --> Final output sent to browser
+DEBUG - 2016-07-22 20:05:31 --> Total execution time: 0.1882
+INFO - 2016-07-22 20:05:31 --> Config Class Initialized
+INFO - 2016-07-22 20:05:31 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:31 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:31 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:31 --> URI Class Initialized
+INFO - 2016-07-22 20:05:31 --> Config Class Initialized
+INFO - 2016-07-22 20:05:31 --> Hooks Class Initialized
+INFO - 2016-07-22 20:05:31 --> Router Class Initialized
+INFO - 2016-07-22 20:05:31 --> Output Class Initialized
+DEBUG - 2016-07-22 20:05:31 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:31 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:31 --> Security Class Initialized
+INFO - 2016-07-22 20:05:31 --> URI Class Initialized
+DEBUG - 2016-07-22 20:05:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:31 --> Input Class Initialized
+INFO - 2016-07-22 20:05:31 --> Router Class Initialized
+INFO - 2016-07-22 20:05:31 --> Language Class Initialized
+ERROR - 2016-07-22 20:05:31 --> 404 Page Not Found: Css/semantic.min.css
+INFO - 2016-07-22 20:05:31 --> Output Class Initialized
+INFO - 2016-07-22 20:05:31 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:31 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:31 --> Input Class Initialized
+INFO - 2016-07-22 20:05:31 --> Language Class Initialized
+ERROR - 2016-07-22 20:05:31 --> 404 Page Not Found: Posts/bower_components
+INFO - 2016-07-22 20:05:37 --> Config Class Initialized
+INFO - 2016-07-22 20:05:37 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:37 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:37 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:37 --> URI Class Initialized
+INFO - 2016-07-22 20:05:37 --> Router Class Initialized
+INFO - 2016-07-22 20:05:37 --> Output Class Initialized
+INFO - 2016-07-22 20:05:37 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:37 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:37 --> Input Class Initialized
+INFO - 2016-07-22 20:05:37 --> Language Class Initialized
+INFO - 2016-07-22 20:05:37 --> Loader Class Initialized
+INFO - 2016-07-22 20:05:37 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:05:37 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:05:37 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:05:37 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:05:37 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:05:37 --> Forensics Console library loaded
+INFO - 2016-07-22 20:05:37 --> Model Class Initialized
+INFO - 2016-07-22 20:05:37 --> Model Class Initialized
+INFO - 2016-07-22 20:05:37 --> Controller Class Initialized
+INFO - 2016-07-22 20:05:37 --> Model Class Initialized
+INFO - 2016-07-22 20:05:37 --> Helper loaded: date_helper
+INFO - 2016-07-22 20:05:37 --> File loaded: /var/www/public/blog/application/views/index.php
+INFO - 2016-07-22 20:05:37 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:05:37 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:05:37 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:05:37 --> File loaded: /var/www/public/blog/application/views/profiler_template.php
+INFO - 2016-07-22 20:05:37 --> Final output sent to browser
+DEBUG - 2016-07-22 20:05:37 --> Total execution time: 0.2019
+INFO - 2016-07-22 20:05:38 --> Config Class Initialized
+INFO - 2016-07-22 20:05:38 --> Hooks Class Initialized
+INFO - 2016-07-22 20:05:38 --> Config Class Initialized
+INFO - 2016-07-22 20:05:38 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:05:38 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:38 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:38 --> URI Class Initialized
+DEBUG - 2016-07-22 20:05:38 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:05:38 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:05:38 --> Router Class Initialized
+INFO - 2016-07-22 20:05:38 --> URI Class Initialized
+INFO - 2016-07-22 20:05:38 --> Output Class Initialized
+INFO - 2016-07-22 20:05:38 --> Router Class Initialized
+INFO - 2016-07-22 20:05:38 --> Security Class Initialized
+INFO - 2016-07-22 20:05:38 --> Output Class Initialized
+DEBUG - 2016-07-22 20:05:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:38 --> Input Class Initialized
+INFO - 2016-07-22 20:05:38 --> Language Class Initialized
+INFO - 2016-07-22 20:05:38 --> Security Class Initialized
+DEBUG - 2016-07-22 20:05:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:05:38 --> Input Class Initialized
+ERROR - 2016-07-22 20:05:38 --> 404 Page Not Found: Css/semantic.min.css
+INFO - 2016-07-22 20:05:38 --> Language Class Initialized
+ERROR - 2016-07-22 20:05:38 --> 404 Page Not Found: Posts/bower_components

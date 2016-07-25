@@ -8,6 +8,7 @@ class Posts extends CI_Controller
     {
         parent::__construct();
         $this->load->model('posts_model', 'posts');
+        $this->load->model('tags_model', 'tags');
         $this->load->model('Generic');
 
     }
@@ -25,7 +26,7 @@ class Posts extends CI_Controller
     public function edit_post($id = false)
     {
         if ($id && $data['post'] = $this->posts->get($id)) {
-            $data['tags'] = $this->posts->get_tag($id);
+            $data['tags'] = $this->tags->get_tag($id);
             $this->mustache->parse_view('content', 'edit_post/edit_post', $data);
             $this->mustache->render();
         } else {
@@ -34,27 +35,49 @@ class Posts extends CI_Controller
 
     }
 
-    //TODO: make normal meg
+    //TODO: make normal msg
     public function update_post($id = false)
     {
         if ($id) {
             $query = $this->generic->get_post('title, uri, short_text, text, is_visible');
-            $respond = $this->posts->update_post($query, $id);
-            if ($respond) {
-                $this->output->set_output(json_encode(array('message' => 'all good')));
-            } else {
-                $this->output->set_output(json_encode(array('message' => 'something wrong')));
+        }
+        $respond = $this->posts->update_post($query, $id);
+        if ($respond) {
+            $this->tags->remove_tag($id);
+            if ($data = $this->input->post('tags')) {
+                foreach ($data as $tag) {
+                    if ($tag_id = $this->tags->check_tag($tag)) {
+                        $this->tags->rel_tag($tag_id->id, $id);
+                    } else {
+                        $tag_id = $this->tags->add_tag(array('uri' => $tag, 'title' => $tag));
+                        $this->tags->rel_tag($tag_id, $id);
+                    }
+                }
             }
+            $this->output->set_output(json_encode(array('message' => 'all good')));
+        } else {
+            $this->output->set_output(json_encode(array('message' => 'something wrong')));
         }
     }
 
-    //TODO: make normal msg
+
+//TODO: make normal msg
     public function add_post()
     {
         $query = $this->generic->get_post('title,uri,short_text,text,is_visible');
         $respond = $this->posts->add_post($query);
 
         if ($respond) {
+            if ($data = $this->input->post('tags')) {
+                foreach ($data as $tag) {
+                    if ($tag_id = $this->tags->check_tag($tag)) {
+                        $this->tags->rel_tag($tag_id->id, $respond);
+                    } else {
+                        $tag_id = $this->tags->add_tag(array('uri' => $tag, 'title' => $tag));
+                        $this->tags->rel_tag($tag_id, $respond);
+                    }
+                }
+            }
             $this->output->set_output(json_encode(['message' => 'all good']));
         } else {
             $this->output->set_output(json_encode(['message' => 'something wrong']));
@@ -62,8 +85,9 @@ class Posts extends CI_Controller
 
     }
 
-    //TODO: make normal msg
-    public function del_post($id = false)
+//TODO: make normal msg
+    public
+    function del_post($id = false)
     {
         if ($id && $data['result'] = $this->posts->del_post($id)) {
             redirect('/');
@@ -72,7 +96,8 @@ class Posts extends CI_Controller
         }
     }
 
-    public function check_uri($uri = false)
+    public
+    function check_uri($uri = false)
     {
 
         if ($uri && $data = $this->posts->check_uri($uri)) {
@@ -85,7 +110,7 @@ class Posts extends CI_Controller
 
     public function get_tags()
     {
-        if ($data = $this->posts->get_tags()) {
+        if ($data = $this->tags->get_tags()) {
             $array = array();
             foreach ($data as $item) {
                 $array[] = $item['title'];

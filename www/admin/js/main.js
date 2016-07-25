@@ -34,10 +34,9 @@
                 data: $(this).serialize()
             }).done(function (data) {
                 var arr = JSON.parse(data);
-                $(this).find("input").val("");
-                // $(this).trigger("reset");
                 alert(arr.message);
             });
+            $(this).trigger("reset");
 
         },
         checkUri: function (e) {

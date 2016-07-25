@@ -19301,3 +19301,992 @@ INFO - 2016-07-22 14:42:45 --> Helper loaded: date_helper
 DEBUG - 2016-07-22 14:42:45 --> Pagination class already loaded. Second attempt ignored.
 INFO - 2016-07-22 14:42:45 --> Final output sent to browser
 DEBUG - 2016-07-22 14:42:45 --> Total execution time: 0.2121
+INFO - 2016-07-22 16:49:49 --> Config Class Initialized
+INFO - 2016-07-22 16:49:49 --> Hooks Class Initialized
+DEBUG - 2016-07-22 16:49:49 --> UTF-8 Support Enabled
+INFO - 2016-07-22 16:49:49 --> Utf8 Class Initialized
+INFO - 2016-07-22 16:49:49 --> URI Class Initialized
+DEBUG - 2016-07-22 16:49:49 --> No URI present. Default controller set.
+INFO - 2016-07-22 16:49:49 --> Router Class Initialized
+INFO - 2016-07-22 16:49:49 --> Output Class Initialized
+INFO - 2016-07-22 16:49:49 --> Security Class Initialized
+DEBUG - 2016-07-22 16:49:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 16:49:49 --> Input Class Initialized
+INFO - 2016-07-22 16:49:49 --> Language Class Initialized
+INFO - 2016-07-22 16:49:49 --> Loader Class Initialized
+INFO - 2016-07-22 16:49:49 --> Helper loaded: url_helper
+INFO - 2016-07-22 16:49:49 --> Helper loaded: generic_helper
+INFO - 2016-07-22 16:49:49 --> Database Driver Class Initialized
+INFO - 2016-07-22 16:49:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 16:49:49 --> Pagination Class Initialized
+DEBUG - 2016-07-22 16:49:49 --> DX Auth Initialized
+INFO - 2016-07-22 16:49:49 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 16:49:49 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 16:49:49 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 16:49:49 --> Forensics Console library loaded
+INFO - 2016-07-22 16:49:49 --> Model Class Initialized
+INFO - 2016-07-22 16:49:49 --> Model Class Initialized
+INFO - 2016-07-22 16:49:49 --> Controller Class Initialized
+INFO - 2016-07-22 16:49:49 --> Config Class Initialized
+INFO - 2016-07-22 16:49:49 --> Hooks Class Initialized
+DEBUG - 2016-07-22 16:49:49 --> UTF-8 Support Enabled
+INFO - 2016-07-22 16:49:49 --> Utf8 Class Initialized
+INFO - 2016-07-22 16:49:49 --> URI Class Initialized
+INFO - 2016-07-22 16:49:49 --> Router Class Initialized
+INFO - 2016-07-22 16:49:49 --> Output Class Initialized
+INFO - 2016-07-22 16:49:49 --> Security Class Initialized
+DEBUG - 2016-07-22 16:49:49 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 16:49:49 --> Input Class Initialized
+INFO - 2016-07-22 16:49:49 --> Language Class Initialized
+INFO - 2016-07-22 16:49:49 --> Loader Class Initialized
+INFO - 2016-07-22 16:49:49 --> Helper loaded: url_helper
+INFO - 2016-07-22 16:49:49 --> Helper loaded: generic_helper
+INFO - 2016-07-22 16:49:49 --> Database Driver Class Initialized
+INFO - 2016-07-22 16:49:50 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 16:49:50 --> Pagination Class Initialized
+DEBUG - 2016-07-22 16:49:50 --> DX Auth Initialized
+INFO - 2016-07-22 16:49:50 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 16:49:50 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 16:49:50 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 16:49:50 --> Forensics Console library loaded
+INFO - 2016-07-22 16:49:50 --> Model Class Initialized
+INFO - 2016-07-22 16:49:50 --> Model Class Initialized
+INFO - 2016-07-22 16:49:50 --> Controller Class Initialized
+INFO - 2016-07-22 16:49:50 --> Helper loaded: form_helper
+INFO - 2016-07-22 16:49:50 --> Form Validation Class Initialized
+DEBUG - 2016-07-22 16:49:50 --> DX_Auth class already loaded. Second attempt ignored.
+INFO - 2016-07-22 16:49:50 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 16:49:50 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 16:49:50 --> Helper loaded: language_helper
+INFO - 2016-07-22 16:49:50 --> Helper loaded: text_helper
+INFO - 2016-07-22 16:49:50 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 16:49:50 --> Final output sent to browser
+DEBUG - 2016-07-22 16:49:50 --> Total execution time: 0.1507
+INFO - 2016-07-22 16:50:03 --> Config Class Initialized
+INFO - 2016-07-22 16:50:03 --> Hooks Class Initialized
+DEBUG - 2016-07-22 16:50:03 --> UTF-8 Support Enabled
+INFO - 2016-07-22 16:50:03 --> Utf8 Class Initialized
+INFO - 2016-07-22 16:50:03 --> URI Class Initialized
+INFO - 2016-07-22 16:50:03 --> Router Class Initialized
+INFO - 2016-07-22 16:50:03 --> Output Class Initialized
+INFO - 2016-07-22 16:50:03 --> Security Class Initialized
+DEBUG - 2016-07-22 16:50:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 16:50:03 --> Input Class Initialized
+INFO - 2016-07-22 16:50:03 --> Language Class Initialized
+INFO - 2016-07-22 16:50:03 --> Loader Class Initialized
+INFO - 2016-07-22 16:50:03 --> Helper loaded: url_helper
+INFO - 2016-07-22 16:50:03 --> Helper loaded: generic_helper
+INFO - 2016-07-22 16:50:03 --> Database Driver Class Initialized
+INFO - 2016-07-22 16:50:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 16:50:03 --> Pagination Class Initialized
+DEBUG - 2016-07-22 16:50:03 --> DX Auth Initialized
+INFO - 2016-07-22 16:50:03 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 16:50:03 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 16:50:03 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 16:50:03 --> Forensics Console library loaded
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Controller Class Initialized
+INFO - 2016-07-22 16:50:03 --> Helper loaded: form_helper
+INFO - 2016-07-22 16:50:03 --> Form Validation Class Initialized
+DEBUG - 2016-07-22 16:50:03 --> DX_Auth class already loaded. Second attempt ignored.
+INFO - 2016-07-22 16:50:03 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Config Class Initialized
+INFO - 2016-07-22 16:50:03 --> Hooks Class Initialized
+DEBUG - 2016-07-22 16:50:03 --> UTF-8 Support Enabled
+INFO - 2016-07-22 16:50:03 --> Utf8 Class Initialized
+INFO - 2016-07-22 16:50:03 --> URI Class Initialized
+DEBUG - 2016-07-22 16:50:03 --> No URI present. Default controller set.
+INFO - 2016-07-22 16:50:03 --> Router Class Initialized
+INFO - 2016-07-22 16:50:03 --> Output Class Initialized
+INFO - 2016-07-22 16:50:03 --> Security Class Initialized
+DEBUG - 2016-07-22 16:50:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 16:50:03 --> Input Class Initialized
+INFO - 2016-07-22 16:50:03 --> Language Class Initialized
+INFO - 2016-07-22 16:50:03 --> Loader Class Initialized
+INFO - 2016-07-22 16:50:03 --> Helper loaded: url_helper
+INFO - 2016-07-22 16:50:03 --> Helper loaded: generic_helper
+INFO - 2016-07-22 16:50:03 --> Database Driver Class Initialized
+INFO - 2016-07-22 16:50:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 16:50:03 --> Pagination Class Initialized
+DEBUG - 2016-07-22 16:50:03 --> DX Auth Initialized
+INFO - 2016-07-22 16:50:03 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 16:50:03 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 16:50:03 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 16:50:03 --> Forensics Console library loaded
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Controller Class Initialized
+INFO - 2016-07-22 16:50:03 --> Model Class Initialized
+INFO - 2016-07-22 16:50:03 --> Helper loaded: date_helper
+INFO - 2016-07-22 16:50:03 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 16:50:03 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 16:50:03 --> Helper loaded: language_helper
+INFO - 2016-07-22 16:50:03 --> Helper loaded: text_helper
+INFO - 2016-07-22 16:50:03 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 16:50:03 --> Final output sent to browser
+DEBUG - 2016-07-22 16:50:03 --> Total execution time: 0.1785
+INFO - 2016-07-22 17:00:29 --> Config Class Initialized
+INFO - 2016-07-22 17:00:29 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:00:29 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:00:29 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:00:29 --> URI Class Initialized
+INFO - 2016-07-22 17:00:29 --> Router Class Initialized
+INFO - 2016-07-22 17:00:29 --> Output Class Initialized
+INFO - 2016-07-22 17:00:29 --> Security Class Initialized
+DEBUG - 2016-07-22 17:00:29 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:00:29 --> Input Class Initialized
+INFO - 2016-07-22 17:00:29 --> Language Class Initialized
+INFO - 2016-07-22 17:00:29 --> Loader Class Initialized
+INFO - 2016-07-22 17:00:29 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:00:29 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:00:29 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:00:29 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:00:29 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:00:29 --> DX Auth Initialized
+INFO - 2016-07-22 17:00:29 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:00:29 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:00:29 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:00:29 --> Forensics Console library loaded
+INFO - 2016-07-22 17:00:29 --> Model Class Initialized
+INFO - 2016-07-22 17:00:29 --> Model Class Initialized
+INFO - 2016-07-22 17:00:29 --> Controller Class Initialized
+INFO - 2016-07-22 17:00:29 --> Model Class Initialized
+INFO - 2016-07-22 17:00:29 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 17:00:29 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:00:29 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:00:29 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:00:29 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:00:29 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:00:29 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:00:29 --> Final output sent to browser
+DEBUG - 2016-07-22 17:00:29 --> Total execution time: 0.2608
+INFO - 2016-07-22 17:00:52 --> Config Class Initialized
+INFO - 2016-07-22 17:00:52 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:00:52 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:00:52 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:00:52 --> URI Class Initialized
+INFO - 2016-07-22 17:00:52 --> Router Class Initialized
+INFO - 2016-07-22 17:00:52 --> Output Class Initialized
+INFO - 2016-07-22 17:00:52 --> Security Class Initialized
+DEBUG - 2016-07-22 17:00:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:00:52 --> Input Class Initialized
+INFO - 2016-07-22 17:00:52 --> Language Class Initialized
+INFO - 2016-07-22 17:00:52 --> Loader Class Initialized
+INFO - 2016-07-22 17:00:52 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:00:52 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:00:52 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:00:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:00:52 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:00:52 --> DX Auth Initialized
+INFO - 2016-07-22 17:00:52 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:00:52 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:00:52 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:00:52 --> Forensics Console library loaded
+INFO - 2016-07-22 17:00:52 --> Model Class Initialized
+INFO - 2016-07-22 17:00:52 --> Model Class Initialized
+INFO - 2016-07-22 17:00:52 --> Controller Class Initialized
+INFO - 2016-07-22 17:00:52 --> Model Class Initialized
+INFO - 2016-07-22 17:00:52 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 17:00:52 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:00:52 --> Final output sent to browser
+DEBUG - 2016-07-22 17:00:52 --> Total execution time: 0.1596
+INFO - 2016-07-22 17:00:54 --> Config Class Initialized
+INFO - 2016-07-22 17:00:54 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:00:54 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:00:54 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:00:54 --> URI Class Initialized
+INFO - 2016-07-22 17:00:54 --> Router Class Initialized
+INFO - 2016-07-22 17:00:54 --> Output Class Initialized
+INFO - 2016-07-22 17:00:54 --> Security Class Initialized
+DEBUG - 2016-07-22 17:00:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:00:54 --> Input Class Initialized
+INFO - 2016-07-22 17:00:54 --> Language Class Initialized
+INFO - 2016-07-22 17:00:54 --> Loader Class Initialized
+INFO - 2016-07-22 17:00:54 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:00:54 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:00:54 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:00:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:00:54 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:00:54 --> DX Auth Initialized
+INFO - 2016-07-22 17:00:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:00:54 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:00:54 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:00:54 --> Forensics Console library loaded
+INFO - 2016-07-22 17:00:54 --> Model Class Initialized
+INFO - 2016-07-22 17:00:54 --> Model Class Initialized
+INFO - 2016-07-22 17:00:54 --> Controller Class Initialized
+INFO - 2016-07-22 17:00:54 --> Model Class Initialized
+INFO - 2016-07-22 17:00:54 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 17:00:54 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:00:54 --> Final output sent to browser
+DEBUG - 2016-07-22 17:00:54 --> Total execution time: 0.1363
+INFO - 2016-07-22 17:00:56 --> Config Class Initialized
+INFO - 2016-07-22 17:00:56 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:00:56 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:00:56 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:00:56 --> URI Class Initialized
+DEBUG - 2016-07-22 17:00:56 --> No URI present. Default controller set.
+INFO - 2016-07-22 17:00:56 --> Router Class Initialized
+INFO - 2016-07-22 17:00:56 --> Output Class Initialized
+INFO - 2016-07-22 17:00:56 --> Security Class Initialized
+DEBUG - 2016-07-22 17:00:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:00:56 --> Input Class Initialized
+INFO - 2016-07-22 17:00:56 --> Language Class Initialized
+INFO - 2016-07-22 17:00:56 --> Loader Class Initialized
+INFO - 2016-07-22 17:00:56 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:00:56 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:00:56 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:00:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:00:56 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:00:56 --> DX Auth Initialized
+INFO - 2016-07-22 17:00:56 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:00:56 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:00:56 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:00:56 --> Forensics Console library loaded
+INFO - 2016-07-22 17:00:56 --> Model Class Initialized
+INFO - 2016-07-22 17:00:56 --> Model Class Initialized
+INFO - 2016-07-22 17:00:56 --> Controller Class Initialized
+INFO - 2016-07-22 17:00:56 --> Model Class Initialized
+INFO - 2016-07-22 17:00:56 --> Helper loaded: date_helper
+INFO - 2016-07-22 17:00:56 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:00:56 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:00:56 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:00:56 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:00:56 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:00:56 --> Final output sent to browser
+DEBUG - 2016-07-22 17:00:56 --> Total execution time: 0.1557
+INFO - 2016-07-22 17:00:58 --> Config Class Initialized
+INFO - 2016-07-22 17:00:58 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:00:58 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:00:58 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:00:58 --> URI Class Initialized
+INFO - 2016-07-22 17:00:58 --> Router Class Initialized
+INFO - 2016-07-22 17:00:58 --> Output Class Initialized
+INFO - 2016-07-22 17:00:58 --> Security Class Initialized
+DEBUG - 2016-07-22 17:00:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:00:58 --> Input Class Initialized
+INFO - 2016-07-22 17:00:58 --> Language Class Initialized
+INFO - 2016-07-22 17:00:58 --> Loader Class Initialized
+INFO - 2016-07-22 17:00:58 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:00:58 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:00:58 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:00:58 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:00:58 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:00:58 --> DX Auth Initialized
+INFO - 2016-07-22 17:00:58 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:00:58 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:00:58 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:00:58 --> Forensics Console library loaded
+INFO - 2016-07-22 17:00:58 --> Model Class Initialized
+INFO - 2016-07-22 17:00:58 --> Model Class Initialized
+INFO - 2016-07-22 17:00:58 --> Controller Class Initialized
+INFO - 2016-07-22 17:00:58 --> Model Class Initialized
+INFO - 2016-07-22 17:00:58 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 17:00:58 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:00:58 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:00:58 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:00:58 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:00:58 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:00:58 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:00:58 --> Final output sent to browser
+DEBUG - 2016-07-22 17:00:58 --> Total execution time: 0.1683
+INFO - 2016-07-22 17:01:00 --> Config Class Initialized
+INFO - 2016-07-22 17:01:00 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:01:00 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:01:00 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:01:00 --> URI Class Initialized
+DEBUG - 2016-07-22 17:01:00 --> No URI present. Default controller set.
+INFO - 2016-07-22 17:01:00 --> Router Class Initialized
+INFO - 2016-07-22 17:01:00 --> Output Class Initialized
+INFO - 2016-07-22 17:01:00 --> Security Class Initialized
+DEBUG - 2016-07-22 17:01:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:01:00 --> Input Class Initialized
+INFO - 2016-07-22 17:01:00 --> Language Class Initialized
+INFO - 2016-07-22 17:01:00 --> Loader Class Initialized
+INFO - 2016-07-22 17:01:00 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:01:00 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:01:00 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:01:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:01:00 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:01:00 --> DX Auth Initialized
+INFO - 2016-07-22 17:01:00 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:01:00 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:01:00 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:01:00 --> Forensics Console library loaded
+INFO - 2016-07-22 17:01:00 --> Model Class Initialized
+INFO - 2016-07-22 17:01:00 --> Model Class Initialized
+INFO - 2016-07-22 17:01:00 --> Controller Class Initialized
+INFO - 2016-07-22 17:01:00 --> Model Class Initialized
+INFO - 2016-07-22 17:01:00 --> Helper loaded: date_helper
+INFO - 2016-07-22 17:01:00 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:01:00 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:01:00 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:01:00 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:01:00 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:01:00 --> Final output sent to browser
+DEBUG - 2016-07-22 17:01:00 --> Total execution time: 0.1566
+INFO - 2016-07-22 17:01:07 --> Config Class Initialized
+INFO - 2016-07-22 17:01:07 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:01:07 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:01:07 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:01:07 --> URI Class Initialized
+INFO - 2016-07-22 17:01:07 --> Router Class Initialized
+INFO - 2016-07-22 17:01:07 --> Output Class Initialized
+INFO - 2016-07-22 17:01:07 --> Security Class Initialized
+DEBUG - 2016-07-22 17:01:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:01:07 --> Input Class Initialized
+INFO - 2016-07-22 17:01:07 --> Language Class Initialized
+INFO - 2016-07-22 17:01:07 --> Loader Class Initialized
+INFO - 2016-07-22 17:01:07 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:01:07 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:01:07 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:01:07 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:01:07 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:01:07 --> DX Auth Initialized
+INFO - 2016-07-22 17:01:07 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:01:07 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:01:07 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:01:07 --> Forensics Console library loaded
+INFO - 2016-07-22 17:01:07 --> Model Class Initialized
+INFO - 2016-07-22 17:01:07 --> Model Class Initialized
+INFO - 2016-07-22 17:01:07 --> Controller Class Initialized
+INFO - 2016-07-22 17:01:07 --> Model Class Initialized
+INFO - 2016-07-22 17:01:07 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 17:01:07 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:01:07 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:01:07 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:01:07 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:01:07 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:01:07 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:01:07 --> Final output sent to browser
+DEBUG - 2016-07-22 17:01:07 --> Total execution time: 0.1913
+INFO - 2016-07-22 17:49:50 --> Config Class Initialized
+INFO - 2016-07-22 17:49:50 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:49:50 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:49:50 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:49:50 --> URI Class Initialized
+DEBUG - 2016-07-22 17:49:50 --> No URI present. Default controller set.
+INFO - 2016-07-22 17:49:50 --> Router Class Initialized
+INFO - 2016-07-22 17:49:50 --> Output Class Initialized
+INFO - 2016-07-22 17:49:50 --> Security Class Initialized
+DEBUG - 2016-07-22 17:49:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:49:50 --> Input Class Initialized
+INFO - 2016-07-22 17:49:50 --> Language Class Initialized
+INFO - 2016-07-22 17:49:50 --> Loader Class Initialized
+INFO - 2016-07-22 17:49:50 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:49:50 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:49:50 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:49:50 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:49:50 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:49:50 --> DX Auth Initialized
+INFO - 2016-07-22 17:49:50 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:49:50 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:49:50 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:49:50 --> Forensics Console library loaded
+INFO - 2016-07-22 17:49:50 --> Model Class Initialized
+INFO - 2016-07-22 17:49:50 --> Model Class Initialized
+INFO - 2016-07-22 17:49:50 --> Controller Class Initialized
+INFO - 2016-07-22 17:49:50 --> Config Class Initialized
+INFO - 2016-07-22 17:49:50 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:49:50 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:49:50 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:49:50 --> URI Class Initialized
+INFO - 2016-07-22 17:49:50 --> Router Class Initialized
+INFO - 2016-07-22 17:49:50 --> Output Class Initialized
+INFO - 2016-07-22 17:49:50 --> Security Class Initialized
+DEBUG - 2016-07-22 17:49:50 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:49:50 --> Input Class Initialized
+INFO - 2016-07-22 17:49:50 --> Language Class Initialized
+INFO - 2016-07-22 17:49:50 --> Loader Class Initialized
+INFO - 2016-07-22 17:49:50 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:49:50 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:49:50 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:49:50 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:49:50 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:49:50 --> DX Auth Initialized
+INFO - 2016-07-22 17:49:50 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:49:50 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:49:50 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:49:50 --> Forensics Console library loaded
+INFO - 2016-07-22 17:49:50 --> Model Class Initialized
+INFO - 2016-07-22 17:49:50 --> Model Class Initialized
+INFO - 2016-07-22 17:49:50 --> Controller Class Initialized
+INFO - 2016-07-22 17:49:50 --> Helper loaded: form_helper
+INFO - 2016-07-22 17:49:50 --> Form Validation Class Initialized
+DEBUG - 2016-07-22 17:49:50 --> DX_Auth class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:49:50 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:49:50 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:49:50 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:49:50 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:49:50 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:49:50 --> Final output sent to browser
+DEBUG - 2016-07-22 17:49:50 --> Total execution time: 0.2201
+INFO - 2016-07-22 17:49:56 --> Config Class Initialized
+INFO - 2016-07-22 17:49:56 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:49:56 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:49:56 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:49:56 --> URI Class Initialized
+INFO - 2016-07-22 17:49:56 --> Router Class Initialized
+INFO - 2016-07-22 17:49:56 --> Output Class Initialized
+INFO - 2016-07-22 17:49:56 --> Security Class Initialized
+DEBUG - 2016-07-22 17:49:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:49:56 --> Input Class Initialized
+INFO - 2016-07-22 17:49:56 --> Language Class Initialized
+INFO - 2016-07-22 17:49:56 --> Loader Class Initialized
+INFO - 2016-07-22 17:49:56 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:49:56 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:49:56 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:49:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:49:56 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:49:56 --> DX Auth Initialized
+INFO - 2016-07-22 17:49:56 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:49:56 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:49:56 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:49:56 --> Forensics Console library loaded
+INFO - 2016-07-22 17:49:56 --> Model Class Initialized
+INFO - 2016-07-22 17:49:56 --> Model Class Initialized
+INFO - 2016-07-22 17:49:56 --> Controller Class Initialized
+INFO - 2016-07-22 17:49:56 --> Helper loaded: form_helper
+INFO - 2016-07-22 17:49:56 --> Form Validation Class Initialized
+DEBUG - 2016-07-22 17:49:56 --> DX_Auth class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:49:56 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2016-07-22 17:49:56 --> Model Class Initialized
+INFO - 2016-07-22 17:49:56 --> Model Class Initialized
+INFO - 2016-07-22 17:49:56 --> Model Class Initialized
+INFO - 2016-07-22 17:49:56 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:49:56 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:49:56 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:49:56 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:49:56 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:49:56 --> Final output sent to browser
+DEBUG - 2016-07-22 17:49:56 --> Total execution time: 0.2750
+INFO - 2016-07-22 17:50:03 --> Config Class Initialized
+INFO - 2016-07-22 17:50:03 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:50:03 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:50:03 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:50:03 --> URI Class Initialized
+INFO - 2016-07-22 17:50:03 --> Router Class Initialized
+INFO - 2016-07-22 17:50:03 --> Output Class Initialized
+INFO - 2016-07-22 17:50:03 --> Security Class Initialized
+DEBUG - 2016-07-22 17:50:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:50:03 --> Input Class Initialized
+INFO - 2016-07-22 17:50:03 --> Language Class Initialized
+INFO - 2016-07-22 17:50:03 --> Loader Class Initialized
+INFO - 2016-07-22 17:50:03 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:50:03 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:50:03 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:50:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:50:03 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:50:03 --> DX Auth Initialized
+INFO - 2016-07-22 17:50:03 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:50:03 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:50:03 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:50:03 --> Forensics Console library loaded
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Controller Class Initialized
+INFO - 2016-07-22 17:50:03 --> Helper loaded: form_helper
+INFO - 2016-07-22 17:50:03 --> Form Validation Class Initialized
+DEBUG - 2016-07-22 17:50:03 --> DX_Auth class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:50:03 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Config Class Initialized
+INFO - 2016-07-22 17:50:03 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:50:03 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:50:03 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:50:03 --> URI Class Initialized
+DEBUG - 2016-07-22 17:50:03 --> No URI present. Default controller set.
+INFO - 2016-07-22 17:50:03 --> Router Class Initialized
+INFO - 2016-07-22 17:50:03 --> Output Class Initialized
+INFO - 2016-07-22 17:50:03 --> Security Class Initialized
+DEBUG - 2016-07-22 17:50:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:50:03 --> Input Class Initialized
+INFO - 2016-07-22 17:50:03 --> Language Class Initialized
+INFO - 2016-07-22 17:50:03 --> Loader Class Initialized
+INFO - 2016-07-22 17:50:03 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:50:03 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:50:03 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:50:03 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:50:03 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:50:03 --> DX Auth Initialized
+INFO - 2016-07-22 17:50:03 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:50:03 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:50:03 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:50:03 --> Forensics Console library loaded
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Controller Class Initialized
+INFO - 2016-07-22 17:50:03 --> Model Class Initialized
+INFO - 2016-07-22 17:50:03 --> Helper loaded: date_helper
+INFO - 2016-07-22 17:50:03 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:50:03 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:50:03 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:50:03 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:50:03 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:50:03 --> Final output sent to browser
+DEBUG - 2016-07-22 17:50:03 --> Total execution time: 0.2009
+INFO - 2016-07-22 17:51:19 --> Config Class Initialized
+INFO - 2016-07-22 17:51:19 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:51:19 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:51:19 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:51:19 --> URI Class Initialized
+INFO - 2016-07-22 17:51:19 --> Router Class Initialized
+INFO - 2016-07-22 17:51:19 --> Output Class Initialized
+INFO - 2016-07-22 17:51:19 --> Security Class Initialized
+DEBUG - 2016-07-22 17:51:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:51:19 --> Input Class Initialized
+INFO - 2016-07-22 17:51:19 --> Language Class Initialized
+INFO - 2016-07-22 17:51:19 --> Loader Class Initialized
+INFO - 2016-07-22 17:51:19 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:51:19 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:51:19 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:51:19 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:51:19 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:51:19 --> DX Auth Initialized
+INFO - 2016-07-22 17:51:19 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:51:19 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:51:19 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:51:19 --> Forensics Console library loaded
+INFO - 2016-07-22 17:51:19 --> Model Class Initialized
+INFO - 2016-07-22 17:51:19 --> Model Class Initialized
+INFO - 2016-07-22 17:51:19 --> Controller Class Initialized
+INFO - 2016-07-22 17:51:19 --> Model Class Initialized
+INFO - 2016-07-22 17:51:20 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 17:51:20 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 17:51:20 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:51:20 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:51:20 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:51:20 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:51:20 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:51:20 --> Final output sent to browser
+DEBUG - 2016-07-22 17:51:20 --> Total execution time: 0.7205
+INFO - 2016-07-22 17:52:24 --> Config Class Initialized
+INFO - 2016-07-22 17:52:24 --> Hooks Class Initialized
+DEBUG - 2016-07-22 17:52:24 --> UTF-8 Support Enabled
+INFO - 2016-07-22 17:52:24 --> Utf8 Class Initialized
+INFO - 2016-07-22 17:52:24 --> URI Class Initialized
+DEBUG - 2016-07-22 17:52:24 --> No URI present. Default controller set.
+INFO - 2016-07-22 17:52:24 --> Router Class Initialized
+INFO - 2016-07-22 17:52:24 --> Output Class Initialized
+INFO - 2016-07-22 17:52:24 --> Security Class Initialized
+DEBUG - 2016-07-22 17:52:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 17:52:24 --> Input Class Initialized
+INFO - 2016-07-22 17:52:24 --> Language Class Initialized
+INFO - 2016-07-22 17:52:24 --> Loader Class Initialized
+INFO - 2016-07-22 17:52:24 --> Helper loaded: url_helper
+INFO - 2016-07-22 17:52:24 --> Helper loaded: generic_helper
+INFO - 2016-07-22 17:52:24 --> Database Driver Class Initialized
+INFO - 2016-07-22 17:52:24 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 17:52:24 --> Pagination Class Initialized
+DEBUG - 2016-07-22 17:52:24 --> DX Auth Initialized
+INFO - 2016-07-22 17:52:24 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 17:52:24 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 17:52:24 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 17:52:24 --> Forensics Console library loaded
+INFO - 2016-07-22 17:52:24 --> Model Class Initialized
+INFO - 2016-07-22 17:52:24 --> Model Class Initialized
+INFO - 2016-07-22 17:52:24 --> Controller Class Initialized
+INFO - 2016-07-22 17:52:24 --> Model Class Initialized
+INFO - 2016-07-22 17:52:24 --> Helper loaded: date_helper
+INFO - 2016-07-22 17:52:24 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 17:52:24 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 17:52:24 --> Helper loaded: language_helper
+INFO - 2016-07-22 17:52:24 --> Helper loaded: text_helper
+INFO - 2016-07-22 17:52:24 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 17:52:24 --> Final output sent to browser
+DEBUG - 2016-07-22 17:52:24 --> Total execution time: 0.1738
+INFO - 2016-07-22 18:29:54 --> Config Class Initialized
+INFO - 2016-07-22 18:29:54 --> Hooks Class Initialized
+DEBUG - 2016-07-22 18:29:54 --> UTF-8 Support Enabled
+INFO - 2016-07-22 18:29:54 --> Utf8 Class Initialized
+INFO - 2016-07-22 18:29:54 --> URI Class Initialized
+DEBUG - 2016-07-22 18:29:54 --> No URI present. Default controller set.
+INFO - 2016-07-22 18:29:54 --> Router Class Initialized
+INFO - 2016-07-22 18:29:54 --> Output Class Initialized
+INFO - 2016-07-22 18:29:54 --> Security Class Initialized
+DEBUG - 2016-07-22 18:29:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 18:29:54 --> Input Class Initialized
+INFO - 2016-07-22 18:29:54 --> Language Class Initialized
+INFO - 2016-07-22 18:29:54 --> Loader Class Initialized
+INFO - 2016-07-22 18:29:54 --> Helper loaded: url_helper
+INFO - 2016-07-22 18:29:54 --> Helper loaded: generic_helper
+INFO - 2016-07-22 18:29:54 --> Database Driver Class Initialized
+INFO - 2016-07-22 18:29:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 18:29:54 --> Pagination Class Initialized
+DEBUG - 2016-07-22 18:29:54 --> DX Auth Initialized
+INFO - 2016-07-22 18:29:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 18:29:54 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 18:29:54 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 18:29:54 --> Forensics Console library loaded
+INFO - 2016-07-22 18:29:54 --> Model Class Initialized
+INFO - 2016-07-22 18:29:54 --> Model Class Initialized
+INFO - 2016-07-22 18:29:54 --> Controller Class Initialized
+INFO - 2016-07-22 18:29:54 --> Model Class Initialized
+INFO - 2016-07-22 18:29:54 --> Helper loaded: date_helper
+INFO - 2016-07-22 18:29:54 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 18:29:54 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 18:29:54 --> Helper loaded: language_helper
+INFO - 2016-07-22 18:29:54 --> Helper loaded: text_helper
+INFO - 2016-07-22 18:29:54 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 18:29:54 --> Final output sent to browser
+DEBUG - 2016-07-22 18:29:54 --> Total execution time: 0.2029
+INFO - 2016-07-22 18:29:56 --> Config Class Initialized
+INFO - 2016-07-22 18:29:56 --> Hooks Class Initialized
+DEBUG - 2016-07-22 18:29:56 --> UTF-8 Support Enabled
+INFO - 2016-07-22 18:29:56 --> Utf8 Class Initialized
+INFO - 2016-07-22 18:29:56 --> URI Class Initialized
+INFO - 2016-07-22 18:29:56 --> Router Class Initialized
+INFO - 2016-07-22 18:29:56 --> Output Class Initialized
+INFO - 2016-07-22 18:29:56 --> Security Class Initialized
+DEBUG - 2016-07-22 18:29:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 18:29:56 --> Input Class Initialized
+INFO - 2016-07-22 18:29:56 --> Language Class Initialized
+INFO - 2016-07-22 18:29:56 --> Loader Class Initialized
+INFO - 2016-07-22 18:29:56 --> Helper loaded: url_helper
+INFO - 2016-07-22 18:29:56 --> Helper loaded: generic_helper
+INFO - 2016-07-22 18:29:56 --> Database Driver Class Initialized
+INFO - 2016-07-22 18:29:56 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 18:29:56 --> Pagination Class Initialized
+DEBUG - 2016-07-22 18:29:56 --> DX Auth Initialized
+INFO - 2016-07-22 18:29:56 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 18:29:56 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 18:29:56 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 18:29:56 --> Forensics Console library loaded
+INFO - 2016-07-22 18:29:56 --> Model Class Initialized
+INFO - 2016-07-22 18:29:56 --> Model Class Initialized
+INFO - 2016-07-22 18:29:56 --> Controller Class Initialized
+INFO - 2016-07-22 18:29:56 --> Model Class Initialized
+INFO - 2016-07-22 18:29:56 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 18:29:56 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 18:29:56 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 18:29:56 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 18:29:56 --> Helper loaded: language_helper
+INFO - 2016-07-22 18:29:56 --> Helper loaded: text_helper
+INFO - 2016-07-22 18:29:56 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 18:29:56 --> Final output sent to browser
+DEBUG - 2016-07-22 18:29:56 --> Total execution time: 0.1694
+INFO - 2016-07-22 18:30:32 --> Config Class Initialized
+INFO - 2016-07-22 18:30:32 --> Hooks Class Initialized
+DEBUG - 2016-07-22 18:30:32 --> UTF-8 Support Enabled
+INFO - 2016-07-22 18:30:32 --> Utf8 Class Initialized
+INFO - 2016-07-22 18:30:32 --> URI Class Initialized
+INFO - 2016-07-22 18:30:32 --> Router Class Initialized
+INFO - 2016-07-22 18:30:32 --> Output Class Initialized
+INFO - 2016-07-22 18:30:32 --> Security Class Initialized
+DEBUG - 2016-07-22 18:30:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 18:30:32 --> Input Class Initialized
+INFO - 2016-07-22 18:30:32 --> Language Class Initialized
+INFO - 2016-07-22 18:30:32 --> Loader Class Initialized
+INFO - 2016-07-22 18:30:32 --> Helper loaded: url_helper
+INFO - 2016-07-22 18:30:32 --> Helper loaded: generic_helper
+INFO - 2016-07-22 18:30:32 --> Database Driver Class Initialized
+INFO - 2016-07-22 18:30:32 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 18:30:32 --> Pagination Class Initialized
+DEBUG - 2016-07-22 18:30:32 --> DX Auth Initialized
+INFO - 2016-07-22 18:30:32 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 18:30:32 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 18:30:32 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 18:30:32 --> Forensics Console library loaded
+INFO - 2016-07-22 18:30:32 --> Model Class Initialized
+INFO - 2016-07-22 18:30:32 --> Model Class Initialized
+INFO - 2016-07-22 18:30:32 --> Controller Class Initialized
+INFO - 2016-07-22 18:30:32 --> Model Class Initialized
+INFO - 2016-07-22 18:30:32 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 18:30:32 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 18:30:32 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 18:30:32 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 18:30:32 --> Helper loaded: language_helper
+INFO - 2016-07-22 18:30:32 --> Helper loaded: text_helper
+INFO - 2016-07-22 18:30:32 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 18:30:32 --> Final output sent to browser
+DEBUG - 2016-07-22 18:30:32 --> Total execution time: 0.1768
+INFO - 2016-07-22 18:30:36 --> Config Class Initialized
+INFO - 2016-07-22 18:30:36 --> Hooks Class Initialized
+DEBUG - 2016-07-22 18:30:36 --> UTF-8 Support Enabled
+INFO - 2016-07-22 18:30:36 --> Utf8 Class Initialized
+INFO - 2016-07-22 18:30:36 --> URI Class Initialized
+INFO - 2016-07-22 18:30:36 --> Router Class Initialized
+INFO - 2016-07-22 18:30:36 --> Output Class Initialized
+INFO - 2016-07-22 18:30:36 --> Security Class Initialized
+DEBUG - 2016-07-22 18:30:36 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 18:30:36 --> Input Class Initialized
+INFO - 2016-07-22 18:30:36 --> Language Class Initialized
+INFO - 2016-07-22 18:30:36 --> Loader Class Initialized
+INFO - 2016-07-22 18:30:36 --> Helper loaded: url_helper
+INFO - 2016-07-22 18:30:36 --> Helper loaded: generic_helper
+INFO - 2016-07-22 18:30:36 --> Database Driver Class Initialized
+INFO - 2016-07-22 18:30:36 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 18:30:36 --> Pagination Class Initialized
+DEBUG - 2016-07-22 18:30:36 --> DX Auth Initialized
+INFO - 2016-07-22 18:30:36 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 18:30:36 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 18:30:36 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 18:30:36 --> Forensics Console library loaded
+INFO - 2016-07-22 18:30:36 --> Model Class Initialized
+INFO - 2016-07-22 18:30:36 --> Model Class Initialized
+INFO - 2016-07-22 18:30:36 --> Controller Class Initialized
+INFO - 2016-07-22 18:30:36 --> Model Class Initialized
+INFO - 2016-07-22 18:30:36 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 18:30:36 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 18:30:36 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 18:30:36 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 18:30:36 --> Helper loaded: language_helper
+INFO - 2016-07-22 18:30:36 --> Helper loaded: text_helper
+INFO - 2016-07-22 18:30:36 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 18:30:36 --> Final output sent to browser
+DEBUG - 2016-07-22 18:30:36 --> Total execution time: 0.1480
+INFO - 2016-07-22 18:30:42 --> Config Class Initialized
+INFO - 2016-07-22 18:30:42 --> Hooks Class Initialized
+DEBUG - 2016-07-22 18:30:42 --> UTF-8 Support Enabled
+INFO - 2016-07-22 18:30:42 --> Utf8 Class Initialized
+INFO - 2016-07-22 18:30:42 --> URI Class Initialized
+DEBUG - 2016-07-22 18:30:42 --> No URI present. Default controller set.
+INFO - 2016-07-22 18:30:42 --> Router Class Initialized
+INFO - 2016-07-22 18:30:42 --> Output Class Initialized
+INFO - 2016-07-22 18:30:42 --> Security Class Initialized
+DEBUG - 2016-07-22 18:30:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 18:30:42 --> Input Class Initialized
+INFO - 2016-07-22 18:30:42 --> Language Class Initialized
+INFO - 2016-07-22 18:30:42 --> Loader Class Initialized
+INFO - 2016-07-22 18:30:42 --> Helper loaded: url_helper
+INFO - 2016-07-22 18:30:42 --> Helper loaded: generic_helper
+INFO - 2016-07-22 18:30:42 --> Database Driver Class Initialized
+INFO - 2016-07-22 18:30:42 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 18:30:42 --> Pagination Class Initialized
+DEBUG - 2016-07-22 18:30:42 --> DX Auth Initialized
+INFO - 2016-07-22 18:30:42 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 18:30:42 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 18:30:42 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 18:30:42 --> Forensics Console library loaded
+INFO - 2016-07-22 18:30:42 --> Model Class Initialized
+INFO - 2016-07-22 18:30:42 --> Model Class Initialized
+INFO - 2016-07-22 18:30:42 --> Controller Class Initialized
+INFO - 2016-07-22 18:30:42 --> Model Class Initialized
+INFO - 2016-07-22 18:30:42 --> Helper loaded: date_helper
+INFO - 2016-07-22 18:30:42 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 18:30:42 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 18:30:42 --> Helper loaded: language_helper
+INFO - 2016-07-22 18:30:42 --> Helper loaded: text_helper
+INFO - 2016-07-22 18:30:42 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 18:30:42 --> Final output sent to browser
+DEBUG - 2016-07-22 18:30:42 --> Total execution time: 0.2053
+INFO - 2016-07-22 18:34:21 --> Config Class Initialized
+INFO - 2016-07-22 18:34:21 --> Hooks Class Initialized
+DEBUG - 2016-07-22 18:34:21 --> UTF-8 Support Enabled
+INFO - 2016-07-22 18:34:21 --> Utf8 Class Initialized
+INFO - 2016-07-22 18:34:21 --> URI Class Initialized
+INFO - 2016-07-22 18:34:22 --> Router Class Initialized
+INFO - 2016-07-22 18:34:22 --> Output Class Initialized
+INFO - 2016-07-22 18:34:22 --> Security Class Initialized
+DEBUG - 2016-07-22 18:34:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 18:34:22 --> Input Class Initialized
+INFO - 2016-07-22 18:34:22 --> Language Class Initialized
+INFO - 2016-07-22 18:34:22 --> Loader Class Initialized
+INFO - 2016-07-22 18:34:22 --> Helper loaded: url_helper
+INFO - 2016-07-22 18:34:22 --> Helper loaded: generic_helper
+INFO - 2016-07-22 18:34:22 --> Database Driver Class Initialized
+INFO - 2016-07-22 18:34:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 18:34:22 --> Pagination Class Initialized
+DEBUG - 2016-07-22 18:34:22 --> DX Auth Initialized
+INFO - 2016-07-22 18:34:22 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 18:34:22 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 18:34:22 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 18:34:22 --> Forensics Console library loaded
+INFO - 2016-07-22 18:34:22 --> Model Class Initialized
+INFO - 2016-07-22 18:34:22 --> Model Class Initialized
+INFO - 2016-07-22 18:34:22 --> Controller Class Initialized
+INFO - 2016-07-22 18:34:22 --> Model Class Initialized
+INFO - 2016-07-22 18:34:22 --> Helper loaded: date_helper
+DEBUG - 2016-07-22 18:34:22 --> Pagination class already loaded. Second attempt ignored.
+INFO - 2016-07-22 18:34:22 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 18:34:22 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 18:34:22 --> Helper loaded: language_helper
+INFO - 2016-07-22 18:34:22 --> Helper loaded: text_helper
+INFO - 2016-07-22 18:34:22 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 18:34:22 --> Final output sent to browser
+DEBUG - 2016-07-22 18:34:22 --> Total execution time: 0.2012
+INFO - 2016-07-22 20:02:28 --> Config Class Initialized
+INFO - 2016-07-22 20:02:28 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:02:28 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:02:28 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:02:28 --> URI Class Initialized
+DEBUG - 2016-07-22 20:02:28 --> No URI present. Default controller set.
+INFO - 2016-07-22 20:02:28 --> Router Class Initialized
+INFO - 2016-07-22 20:02:28 --> Output Class Initialized
+INFO - 2016-07-22 20:02:28 --> Security Class Initialized
+DEBUG - 2016-07-22 20:02:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:02:28 --> Input Class Initialized
+INFO - 2016-07-22 20:02:28 --> Language Class Initialized
+INFO - 2016-07-22 20:02:28 --> Loader Class Initialized
+INFO - 2016-07-22 20:02:29 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:02:29 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:02:29 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:02:29 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:02:29 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:02:29 --> DX Auth Initialized
+INFO - 2016-07-22 20:02:29 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 20:02:29 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 20:02:29 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 20:02:29 --> Forensics Console library loaded
+INFO - 2016-07-22 20:02:29 --> Model Class Initialized
+INFO - 2016-07-22 20:02:29 --> Model Class Initialized
+INFO - 2016-07-22 20:02:29 --> Controller Class Initialized
+INFO - 2016-07-22 20:02:29 --> Model Class Initialized
+INFO - 2016-07-22 20:02:29 --> Helper loaded: date_helper
+INFO - 2016-07-22 20:02:29 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 20:02:29 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:02:29 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:02:29 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:02:29 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 20:02:29 --> Final output sent to browser
+DEBUG - 2016-07-22 20:02:29 --> Total execution time: 0.2677
+INFO - 2016-07-22 20:02:48 --> Config Class Initialized
+INFO - 2016-07-22 20:02:48 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:02:48 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:02:48 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:02:48 --> URI Class Initialized
+DEBUG - 2016-07-22 20:02:48 --> No URI present. Default controller set.
+INFO - 2016-07-22 20:02:48 --> Router Class Initialized
+INFO - 2016-07-22 20:02:48 --> Output Class Initialized
+INFO - 2016-07-22 20:02:48 --> Security Class Initialized
+DEBUG - 2016-07-22 20:02:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:02:48 --> Input Class Initialized
+INFO - 2016-07-22 20:02:48 --> Language Class Initialized
+INFO - 2016-07-22 20:02:48 --> Loader Class Initialized
+INFO - 2016-07-22 20:02:48 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:02:48 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:02:49 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:02:49 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:02:49 --> Pagination Class Initialized
+DEBUG - 2016-07-22 20:02:49 --> DX Auth Initialized
+INFO - 2016-07-22 20:02:49 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 20:02:49 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 20:02:49 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 20:02:49 --> Forensics Console library loaded
+INFO - 2016-07-22 20:02:49 --> Model Class Initialized
+INFO - 2016-07-22 20:02:49 --> Model Class Initialized
+INFO - 2016-07-22 20:02:49 --> Controller Class Initialized
+INFO - 2016-07-22 20:02:49 --> Model Class Initialized
+INFO - 2016-07-22 20:02:49 --> Helper loaded: date_helper
+INFO - 2016-07-22 20:02:49 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 20:02:49 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:02:49 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:02:49 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:02:49 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 20:02:49 --> Final output sent to browser
+DEBUG - 2016-07-22 20:02:49 --> Total execution time: 0.2427
+INFO - 2016-07-22 20:02:54 --> Config Class Initialized
+INFO - 2016-07-22 20:02:54 --> Hooks Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:02:54 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:02:54 --> URI Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> No URI present. Default controller set.
+INFO - 2016-07-22 20:02:54 --> Router Class Initialized
+INFO - 2016-07-22 20:02:54 --> Config Class Initialized
+INFO - 2016-07-22 20:02:54 --> Hooks Class Initialized
+INFO - 2016-07-22 20:02:54 --> Output Class Initialized
+INFO - 2016-07-22 20:02:54 --> Security Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:02:54 --> Utf8 Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:02:54 --> Input Class Initialized
+INFO - 2016-07-22 20:02:54 --> URI Class Initialized
+INFO - 2016-07-22 20:02:54 --> Language Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> No URI present. Default controller set.
+INFO - 2016-07-22 20:02:54 --> Router Class Initialized
+INFO - 2016-07-22 20:02:54 --> Loader Class Initialized
+INFO - 2016-07-22 20:02:54 --> Config Class Initialized
+INFO - 2016-07-22 20:02:54 --> Output Class Initialized
+INFO - 2016-07-22 20:02:54 --> Hooks Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:02:54 --> Security Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: generic_helper
+DEBUG - 2016-07-22 20:02:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:02:54 --> Input Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> UTF-8 Support Enabled
+INFO - 2016-07-22 20:02:54 --> Utf8 Class Initialized
+INFO - 2016-07-22 20:02:54 --> Language Class Initialized
+INFO - 2016-07-22 20:02:54 --> URI Class Initialized
+INFO - 2016-07-22 20:02:54 --> Loader Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: url_helper
+DEBUG - 2016-07-22 20:02:54 --> No URI present. Default controller set.
+INFO - 2016-07-22 20:02:54 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:02:54 --> Router Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:02:54 --> Output Class Initialized
+INFO - 2016-07-22 20:02:54 --> Security Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2016-07-22 20:02:54 --> Input Class Initialized
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:02:54 --> Pagination Class Initialized
+INFO - 2016-07-22 20:02:54 --> Language Class Initialized
+INFO - 2016-07-22 20:02:54 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:02:54 --> Loader Class Initialized
+DEBUG - 2016-07-22 20:02:54 --> DX Auth Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: url_helper
+INFO - 2016-07-22 20:02:54 --> Helper loaded: generic_helper
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:02:54 --> Pagination Class Initialized
+INFO - 2016-07-22 20:02:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 20:02:54 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+DEBUG - 2016-07-22 20:02:54 --> DX Auth Initialized
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 20:02:54 --> Forensics Console library loaded
+INFO - 2016-07-22 20:02:54 --> Database Driver Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Controller Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: date_helper
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2016-07-22 20:02:54 --> Pagination Class Initialized
+INFO - 2016-07-22 20:02:54 --> File loaded: /var/www/public/blog/admin/views/index.php
+DEBUG - 2016-07-22 20:02:54 --> DX Auth Initialized
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:02:54 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:02:54 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:02:54 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 20:02:54 --> Final output sent to browser
+DEBUG - 2016-07-22 20:02:54 --> Total execution time: 0.5475
+INFO - 2016-07-22 20:02:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 20:02:54 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 20:02:54 --> Forensics Console library loaded
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Controller Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: date_helper
+INFO - 2016-07-22 20:02:54 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:02:54 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:02:54 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:02:54 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 20:02:54 --> Final output sent to browser
+DEBUG - 2016-07-22 20:02:54 --> Total execution time: 0.6610
+INFO - 2016-07-22 20:02:54 --> Session: Class initialized using 'files' driver.
+DEBUG - 2016-07-22 20:02:54 --> Config file loaded: /var/www/public/blog/admin/config/dx_auth.php
+INFO - 2016-07-22 20:02:54 --> Language file loaded: language/english/dx_auth_lang.php
+DEBUG - 2016-07-22 20:02:54 --> Forensics Console library loaded
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Controller Class Initialized
+INFO - 2016-07-22 20:02:54 --> Model Class Initialized
+INFO - 2016-07-22 20:02:54 --> Helper loaded: date_helper
+INFO - 2016-07-22 20:02:55 --> File loaded: /var/www/public/blog/admin/views/index.php
+INFO - 2016-07-22 20:02:55 --> Language file loaded: language/english/profiler_lang.php
+INFO - 2016-07-22 20:02:55 --> Helper loaded: language_helper
+INFO - 2016-07-22 20:02:55 --> Helper loaded: text_helper
+INFO - 2016-07-22 20:02:55 --> File loaded: /var/www/public/blog/admin/views/profiler_template.php
+INFO - 2016-07-22 20:02:55 --> Final output sent to browser
+DEBUG - 2016-07-22 20:02:55 --> Total execution time: 0.7790
