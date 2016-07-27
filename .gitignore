@@ -118,25 +118,12 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.gitignore
-admin/cache/mustache/__MyTemplates_196612954da63769e1ca561f3c11bbb3.php
-admin/cache/mustache/__MyTemplates_4273e9718284b3468312610276faaf52.php
-admin/logs/log-2016-07-24.php
-admin/sessions/ci_session0e70365b2297f13828abc92336745ec51e0a17f4
-admin/sessions/ci_session1e27dbb74f136c442ff6433518c2960744cd2f8a
-admin/sessions/ci_session45d078fb6f45f8b0cc41a0f10f58f355301d6f35
-admin/sessions/ci_session50e38d702ead5b405e78b191b6171dbc184fea65
-admin/sessions/ci_session51013b0a23c188ff365e1d51738c5dbd34b9ddbe
-admin/sessions/ci_session519336c49748b23a38394c2d1828686a381ade54
-admin/sessions/ci_session6ea2560cb83564e74a14b705a0809c3c221862eb
-admin/sessions/ci_session95fad861d3cdd95fa462a4d21a08d5efdb80709e
-admin/sessions/ci_session9bb4806aea44c137e39e9a7a8569c66345ce2029
-admin/sessions/ci_sessionae1782feb3ebeb718236690488d73e0a69277d63
-admin/sessions/ci_sessionc82efbbb66200a388aa1972a2208f6da380d29d9
-admin/sessions/ci_sessionc9b68aaf85a38d1b416a47c40061f5dd2dea8828
-admin/sessions/ci_sessioncb54668bc4410f9baccebf1767d2188ff02f2b61
-admin/sessions/ci_sessioncfc7d268b94c504ea2b4df6c564da3a8f63393a1
-admin/sessions/ci_sessiondf6f847d6559d5b5835e1a02e7b09d1bdaab72d8
-admin/sessions/ci_sessioned2e89157d2ac7bd5f0f3865898ac5a28bbdf58f
-application/logs/log-2016-07-24.php
+
+/admin/cache/
+/admin/logs/
+/admin/sessions/
+/application/logs/
+/application/sessions/
+/application/cache/
+
 

@@ -40,23 +40,15 @@ class Posts extends CI_Controller
     {
         if ($id) {
             $query = $this->generic->get_post('title, uri, short_text, text, is_visible');
-        }
-        $respond = $this->posts->update_post($query, $id);
-        if ($respond) {
-            $this->tags->remove_tag($id);
-            if ($data = $this->input->post('tags')) {
-                foreach ($data as $tag) {
-                    if ($tag_id = $this->tags->check_tag($tag)) {
-                        $this->tags->rel_tag($tag_id->id, $id);
-                    } else {
-                        $tag_id = $this->tags->add_tag(array('uri' => $tag, 'title' => $tag));
-                        $this->tags->rel_tag($tag_id, $id);
-                    }
-                }
+            $tags = $this->input->post('tags');
+            $respond = $this->posts->update_post($query, $id);
+            if ($respond) {
+                $this->tags->new_update_tags($id, $tags);
+                
+                $this->output->set_output(json_encode(array('message' => 'all good')));
+            } else {
+                $this->output->set_output(json_encode(array('message' => 'something wrong')));
             }
-            $this->output->set_output(json_encode(array('message' => 'all good')));
-        } else {
-            $this->output->set_output(json_encode(array('message' => 'something wrong')));
         }
     }
 
@@ -65,18 +57,11 @@ class Posts extends CI_Controller
     public function add_post()
     {
         $query = $this->generic->get_post('title,uri,short_text,text,is_visible');
-        $respond = $this->posts->add_post($query);
-
-        if ($respond) {
-            if ($data = $this->input->post('tags')) {
-                foreach ($data as $tag) {
-                    if ($tag_id = $this->tags->check_tag($tag)) {
-                        $this->tags->rel_tag($tag_id->id, $respond);
-                    } else {
-                        $tag_id = $this->tags->add_tag(array('uri' => $tag, 'title' => $tag));
-                        $this->tags->rel_tag($tag_id, $respond);
-                    }
-                }
+        $tags = $this->input->post('tags');
+        $new_post_id = $this->posts->add_post($query);
+        if ($new_post_id) {
+            if (!empty($tags)) {
+                $this->tags->new_add_tags($new_post_id, $tags);
             }
             $this->output->set_output(json_encode(['message' => 'all good']));
         } else {
@@ -86,8 +71,7 @@ class Posts extends CI_Controller
     }
 
 //TODO: make normal msg
-    public
-    function del_post($id = false)
+    public function del_post($id = false)
     {
         if ($id && $data['result'] = $this->posts->del_post($id)) {
             redirect('/');
@@ -96,8 +80,7 @@ class Posts extends CI_Controller
         }
     }
 
-    public
-    function check_uri($uri = false)
+    public function check_uri($uri = false)
     {
 
         if ($uri && $data = $this->posts->check_uri($uri)) {

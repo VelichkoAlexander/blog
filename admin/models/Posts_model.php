@@ -72,6 +72,9 @@ class Posts_model extends CI_Model
             ->where('uri', $uri)
             ->get()->row();
     }
+    
+    
+    
 
 
 
