@@ -52,9 +52,10 @@ class Tags_model extends CI_Model
             ->insert_batch('tags_posts_rel', $data);
     }
 
-    public function remove_tag($post_id)
+    public function remove_tags($post_id, $tags)
     {
         return $this->db
+            ->where_in('tag_id', $tags)
             ->where('post_id', $post_id)
             ->delete('tags_posts_rel');
 
@@ -92,9 +93,9 @@ class Tags_model extends CI_Model
         }
         $this->rel_tag($prepared_ids);
     }
+
     public function new_update_tags($post_id, $arr)
     {
-        $this->remove_tag($post_id);
         $exists_tags = [];
         $prepared_add_rel = [];
         $prepared_add_tags = [];
@@ -105,16 +106,43 @@ class Tags_model extends CI_Model
             ->where_in('title', $arr)
             ->get()->result_array();
         if (!empty($query)) {
+            $temp_next = [];
             foreach ($query as $row) {
+                $temp_next[] = $row['id'];
                 $exists_tags[] = $row['title'];
                 $prepared_add_rel[] = array('tag_id' => $row['id'], 'post_id' => $post_id);
             }
             $add_tags = array_diff($arr, $exists_tags);
-            $this->rel_tag($prepared_add_rel);
+            $query2 = $this->db
+                ->select('tag_id')
+                ->from('tags_posts_rel')
+                ->where('post_id', $post_id)
+                ->get()->result_array();
+            if (!empty($query)) {
+                $temp_ex = [];
+                foreach ($query2 as $row) {
+                    $temp_ex[] = $row['tag_id'];
+                }
+
+                $remove_tag_id = array_diff($temp_ex, $temp_next);
+                $add_tag_id = array_diff($temp_next,$temp_ex);
+                if (!empty($remove_tag_id)) {
+                    $this->remove_tags($post_id, $remove_tag_id);
+                }
+                if(!empty($add_tag_id)){
+                    $data2 = [];
+                    foreach ($add_tag_id as $row) {
+                        $data2[] =  array('tag_id' => $row, 'post_id' => $post_id);
+                    }
+                    $this->rel_tag($data2);
+                }
+            }
 
         } else {
             $add_tags = $arr;
 
+        }
+        if (!empty($add_tags)) {
             foreach ($add_tags as $row) {
                 $prepared_add_tags[] = array('uri' => $row, 'title' => $row);
             }
