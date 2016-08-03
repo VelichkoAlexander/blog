@@ -9,12 +9,11 @@ class Posts extends CI_Controller
         parent::__construct();
         $this->load->model('posts_model', 'posts');
         $this->load->model('tags_model', 'tags');
-        $this->load->model('Generic');
-
     }
 
     public function index()
     {
+        echo 'Post api';
     }
 
     public function new_post()
@@ -40,9 +39,8 @@ class Posts extends CI_Controller
     {
         if ($id) {
             $query = $this->generic->get_post('title, uri, short_text, text, is_visible');
-            $tags = $this->input->post('tags');
-            $respond = $this->posts->update_post($query, $id);
-            if ($respond) {
+            $tags = $this->generic->get_post('tags');
+            if ($this->posts->update_post($query, $id)) {
                 $this->tags->new_update_tags($id, $tags);
                 
                 $this->output->set_output(json_encode(array('message' => 'all good')));

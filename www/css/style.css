@@ -1,0 +1,10 @@
+input,textarea {
+    transition: border .3s ease-in-out;
+}
+input:invalid,textarea:vinalid {
+    border: 1px solid red;
+}
+
+input:valid,textarea:valid {
+    border: 1px solid green;
+}

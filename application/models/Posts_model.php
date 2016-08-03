@@ -29,6 +29,16 @@ class Posts_model extends CI_Model
             ->get()->row_array();
     }
 
+    public function get_comments($id){
+        return $this->db
+                ->select('id, author, text, created_date')
+                ->from('comments')
+                ->where('post_id', $id)
+                ->get()->result_array();
+
+
+    }
+
     function get_post($offset)
     {
         $this->_visibility_rules($this->table);
