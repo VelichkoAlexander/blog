@@ -19,10 +19,12 @@ class Posts extends CI_Controller
     public function view($uri = FALSE)
     {
         if ($uri && $data = $this->posts->get($uri)) {
-//			$data['nice_date'] = hr_date($data['created_date']);
-            $data['comments'] =  $this->posts->get_comments($data['id']);
-            $data['comments'] = convert_comments_date($data['comments']);
+            $data['created'] = hr_date($data['created']);
             $data['tags'] = $this->posts->get_tags($data['id']);
+            $data['comments'] = $this->posts->get_comments($data['id']);
+            $data['comments'] = convert_comments_date($data['comments']);
+            set_smm($data);
+            set_seo($data);
             $this->mustache->parse_view('content', 'items/view', $data);
             $this->mustache->render();
 

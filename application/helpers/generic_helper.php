@@ -57,7 +57,7 @@ function set_smm($data, $page_name = false)
     foreach ($smm as $key => $value) {
         $meta .= '<meta name="' . $key . '" content="' . $value . '"/>';
     }
-    $meta .= '<link rel="image_src" href="' . base_url() . 'uploads/' . $page_name . '/968x504/' . $data["image"] . '"/>';
+//    $meta .= '<link rel="image_src" href="' . base_url() . 'uploads/' . $page_name . '/968x504/' . $data["image"] . '"/>';
     $ci->mustache->write('meta', $meta);
 
 }
