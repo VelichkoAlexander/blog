@@ -1,40 +1,115 @@
-<div class="container">
-    <div class="row">
-        <span>posted by: Alexander on {{created}}</span>
-        <div class="id hidden" data-id="{{id}}"></div>
-        <h1>{{title}}</h1>
-        <div>{{{text}}}</div>
-        {{#tags}}
-            <a href="../Tags/{{uri}}">{{title}}</a>
-        {{/tags}}
-    </div>
-    <div class="row comments">
-        {{#comments}}
+<div class="row">
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{{author}} on : {{created_date}}</h3>
+    <!-- Blog Post Content Column -->
+    <div class="col-lg-8">
+
+        <!-- Blog Post -->
+
+        <!-- Title -->
+        <h1>{{title}}</h1>
+
+        <!-- Author -->
+        <p class="lead">
+            by <a href="#">Alexander</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p><span class="glyphicon glyphicon-time"></span> Posted on {{created}}</p>
+        <div class="id hidden" data-id="{{id}}"></div>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+        <hr>
+        <!-- Post Content -->
+        <p>{{{text}}}</p>
+        <hr>
+        {{#post_tags}}
+            <a href="../tags/{{uri}}">{{title}}</a>
+        {{/post_tags}}
+        <hr>
+        <!-- Comments Form -->
+        <div class="well">
+            <h4>Leave a Comment:</h4>
+            <form role="form" name="comments_form" action="/comments/create" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" name="author" id="name" placeholder="Name" required>
                 </div>
-                <div class="panel-body">
-                    {{text}}
+                <div class="form-group">
+                    <label for="name">Comment:</label>
+                    <textarea class="form-control" name="text" rows="3" required></textarea>
                 </div>
-            </div>
-        {{/comments}}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <hr>
+        <!-- Posted Comments -->
+
+        <!-- Comment -->
+        <div class="comments">
+            {{#comments}}
+                <div class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/64x64" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{author}}
+                            <small>{{created_date}}</small>
+                        </h4>
+                        {{text}}
+                    </div>
+                </div>
+            {{/comments}}
+        </div>
     </div>
-    <div class="row">
-        <form name="comments_form" action="/comments/create" method="post">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" name="author" id="name" placeholder="Name" required>
+    <!-- Blog Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+        <!-- Blog Search Well -->
+        <div class="well">
+            <h4>Blog Search</h4>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Comment</label>
-                <textarea class="form-control" name="text" rows="3" required></textarea>
+            <!-- /.input-group -->
+        </div>
+
+        <!-- Blog Tags Well -->
+        <div class="well">
+            <h4>Blog Tags</h4>
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        {{#tags}}
+                            <li><a href="../tags/{{uri}}">{{title}}</a></li>
+                        {{/tags}}
+                    </ul>
+                </div>
+
             </div>
-            <button type="submit" class="btn btn-default">Sent</button>
-        </form>
+            <!-- /.row -->
+        </div>
+
+        <!-- Side Widget Well -->
+        <div class="well">
+            <h4>Side Widget Well</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus
+                laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+        </div>
+
     </div>
 </div>
+<!--    Modal   -->
 <div class="modal fade" id="modal-form" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">

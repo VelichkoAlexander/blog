@@ -8,6 +8,7 @@ class Main extends CI_Controller
     {
         parent::__construct();
         $this->load->model('posts_model', 'posts');
+        $this->load->model('tags_model', 'tags');
         $this->load->library('pagination');
 
     }
@@ -31,6 +32,9 @@ class Main extends CI_Controller
             $config['next_link'] = '&raquo;';
             $this->pagination->initialize($config);
             $data['pagination'] = $this->pagination->create_links();
+            if($data['tags'] = $this->tags->get() ){
+                
+            }
             //template
             $this->mustache->parse_view('content', 'main_page/categories_list', $data);
             $this->mustache->render();

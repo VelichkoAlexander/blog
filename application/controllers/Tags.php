@@ -12,8 +12,7 @@ class Tags extends CI_Controller {
 
 	public function index()
 	{
-
-
+	echo 'tags';
 	}
 	public  function view($uri=false){
 		

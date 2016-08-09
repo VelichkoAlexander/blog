@@ -43,11 +43,12 @@ class Posts_model extends CI_Model
     function get_post($offset)
     {
         $this->_visibility_rules($this->table);
-        return $this->db
-            ->select('id,uri,title,short_text')
+        $this->db
+            ->select('id, uri, title, short_text, created')
             ->from($this->table)
-            ->limit($this->per_page, ($offset - 1) * $this->per_page)
-            ->get()->result_array();
+            ->limit($this->per_page, ($offset - 1) * $this->per_page);
+        return $this->prepare_data($this->db->get()->result_array());
+
     }
 
     public function get_tags($id)
@@ -66,6 +67,17 @@ class Posts_model extends CI_Model
         $this->db->select('id')
             ->from($table);
         return $this->db->count_all_results();
+    }
+
+    public function prepare_data($data)
+    {
+        foreach ($data as $key => $value) {
+            if (!empty($data[$key]['created'])) {
+                $data[$key]['created'] = hr_date($data[$key]['created'], false);
+            }
+        }
+
+        return $data;
     }
 
 

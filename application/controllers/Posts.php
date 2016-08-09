@@ -9,6 +9,7 @@ class Posts extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Posts_model', 'posts');
+        $this->load->model('Tags_model', 'tags');
     }
 
     public function index()
@@ -20,7 +21,8 @@ class Posts extends CI_Controller
     {
         if ($uri && $data = $this->posts->get($uri)) {
             $data['created'] = hr_date($data['created']);
-            $data['tags'] = $this->posts->get_tags($data['id']);
+            $data['post_tags'] = $this->posts->get_tags($data['id']);
+            $data['tags'] = $this->tags->get();
             $data['comments'] = $this->posts->get_comments($data['id']);
             $data['comments'] = convert_comments_date($data['comments']);
             set_smm($data);
