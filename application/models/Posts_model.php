@@ -22,19 +22,20 @@ class Posts_model extends CI_Model
     {
         $this->_visibility_rules($this->table);
         return $this->db
-            ->select('posts.id, posts.title, posts.text ')
+            ->select('id, title, text, created, meta_keywords, meta_description')
             ->from($this->table)
             ->where($this->table . '.uri', $uri)
             ->limit(1)
             ->get()->row_array();
     }
 
-    public function get_comments($id){
+    public function get_comments($id)
+    {
         return $this->db
-                ->select('id, author, text, created_date')
-                ->from('comments')
-                ->where('post_id', $id)
-                ->get()->result_array();
+            ->select('id, author, text, created_date')
+            ->from('comments')
+            ->where('post_id', $id)
+            ->get()->result_array();
 
 
     }
