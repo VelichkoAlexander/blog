@@ -1,0 +1,82 @@
+<div class="row">
+
+    <!-- Blog Entries Column -->
+    <div class="col-md-8">
+        <h1 class="page-header">
+            {{tag_title}}
+            <small>Secondary Text</small>
+        </h1>
+        <!-- Blog Post -->
+        {{#posts}}
+            <h2>
+                <a href="posts/{{uri}}">{{title}}</a>
+            </h2>
+            <p class="lead">
+                by <a href="#">Alexander</a>
+            </p>
+            <p><span class="glyphicon glyphicon-time"></span> Posted on {{created}}</p>
+            <hr>
+            <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+            <hr>
+            <p>{{short_text}}</p>
+            <a class="btn btn-primary" href="posts/{{uri}}">Read More <span
+                    class="glyphicon glyphicon-chevron-right"></span></a>
+
+        {{/posts}}
+        <!-- Pager -->
+        <div class="text-center">
+            {{{pagination}}}
+        </div>
+
+    </div>
+
+    <!-- Blog Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+        <!-- Blog Search Well -->
+        <div class="well">
+            <h4>Blog Search</h4>
+            <div class="input-group">
+                <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+            </div>
+            <!-- /.input-group -->
+        </div>
+
+        <!-- Tegs Well -->
+        <div class="well">
+            <h4>Blog Tags</h4>
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                        {{#tags}}
+                            <li><a href="../tags/{{uri}}">{{title}}</a></li>
+                        {{/tags}}
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+
+        <!-- Side Widget Well -->
+        <div class="well">
+            <h4>Side Widget Well</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus
+                laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+        </div>
+
+    </div>
+
+</div>
+<!-- /.row -->
+
+<hr>
+
+
+
+
+

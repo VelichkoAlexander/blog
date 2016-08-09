@@ -16,9 +16,13 @@ class Tags extends CI_Controller {
 	}
 	public  function view($uri=false){
 		
-		if($uri && $data['tags'] = $this->tags->get_posts($uri)){
-			$this->mustache->parse_view('content','tags/items',$data);
+		if($uri && $data['posts'] = $this->tags->get_posts($uri)){
+			$data['tag_title'] = $this->tags->get($uri);
+			$data['tags'] = $this->tags->get();
+			$this->mustache->parse_view('content','tags/tags_items',$data);
 			$this->mustache->render();
+		}else{
+			show_404();
 		}
 
 	}

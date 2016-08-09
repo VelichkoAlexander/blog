@@ -14,7 +14,7 @@ class Posts extends CI_Controller
 
     public function index()
     {
-
+            echo 'posts';
     }
 
     public function view($uri = FALSE)
