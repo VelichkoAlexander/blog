@@ -19,6 +19,9 @@ class Tags extends CI_Controller {
 		if($uri && $data['posts'] = $this->tags->get_posts($uri)){
 			$data['tag_title'] = $this->tags->get($uri);
 			$data['tags'] = $this->tags->get();
+			$this->breadcrumbs->push('Main page', '/');
+			$this->breadcrumbs->push($data['tag_title'], ' ');
+			$data['bread'] = $this->breadcrumbs->show();
 			$this->mustache->parse_view('content','tags/tags_items',$data);
 			$this->mustache->render();
 		}else{

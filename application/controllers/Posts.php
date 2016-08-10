@@ -25,6 +25,9 @@ class Posts extends CI_Controller
             $data['tags'] = $this->tags->get();
             $data['comments'] = $this->posts->get_comments($data['id']);
             $data['comments'] = convert_comments_date($data['comments']);
+            $this->breadcrumbs->push('Main page', '/');
+            $this->breadcrumbs->push($data['title'], ' ');
+            $data['bread'] = $this->breadcrumbs->show();
             set_smm($data);
             set_seo($data);
             $this->mustache->parse_view('content', 'items/view', $data);

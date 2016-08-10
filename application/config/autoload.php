@@ -60,7 +60,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('database', 'Mustache','pagination');
+$autoload['libraries'] = array('database', 'Mustache','pagination','Breadcrumbs');
 
 if(ENVIRONMENT === 'development' OR (isset($_COOKIE['idebug']) AND $_COOKIE['idebug'] == 'jgA5iuYNdnggTJiBujEU1N4mgNvvo8IZ7N43oUAE'))
 {

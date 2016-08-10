@@ -1,5 +1,5 @@
 <div class="row">
-
+    {{{bread}}}
     <!-- Blog Entries Column -->
     <div class="col-md-8">
         <h1 class="page-header">
@@ -9,7 +9,7 @@
         <!-- Blog Post -->
         {{#posts}}
             <h2>
-                <a href="posts/{{uri}}">{{title}}</a>
+                <a href="../posts/{{uri}}">{{title}}</a>
             </h2>
             <p class="lead">
                 by <a href="#">Alexander</a>
@@ -19,7 +19,7 @@
             <img class="img-responsive" src="http://placehold.it/900x300" alt="">
             <hr>
             <p>{{short_text}}</p>
-            <a class="btn btn-primary" href="posts/{{uri}}">Read More <span
+            <a class="btn btn-primary" href="../posts/{{uri}}">Read More <span
                     class="glyphicon glyphicon-chevron-right"></span></a>
 
         {{/posts}}
