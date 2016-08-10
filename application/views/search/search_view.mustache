@@ -1,0 +1,21 @@
+<div class="row">
+    <!-- Blog Entries Column -->
+    <div class="col-md-12">
+        <!-- Blog Post -->
+        {{#posts}}
+            <h2>
+                <a href="posts/{{uri}}">{{title}}</a>
+            </h2>
+            <p><span class="glyphicon glyphicon-time"></span> Posted on {{created}}</p>
+            <!--<img class="img-responsive" src="http://placehold.it/900x300" alt="">-->
+            <p>{{short_text}}</p>
+            <hr>
+        {{/posts}}
+    </div>
+</div>
+<!-- /.row -->
+<hr>
+
+
+
+

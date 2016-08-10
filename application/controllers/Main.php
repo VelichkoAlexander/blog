@@ -34,6 +34,7 @@ class Main extends CI_Controller
             $data['pagination'] = $this->pagination->create_links();
             if ($data['tags'] = $this->tags->get()) {
             }
+            $data['base_url'] = base_url();
             //template
             $this->mustache->parse_view('content', 'main_page/categories_list', $data);
             $this->mustache->render();

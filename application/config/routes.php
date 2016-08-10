@@ -53,6 +53,7 @@ $route['default_controller'] = 'main';
 $route['posts/(:any)'] = 'posts/view/$1';
 $route['tags/(:any)'] = 'tags/view/$1';
 $route['(:num)'] = 'main/index/$1';
+$route['search'] = 'search/search_keyword';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
