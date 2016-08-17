@@ -9,19 +9,15 @@
         },
         setUpListeners: function () {
             $('#add_post').on('submit', app.submitForm);
-            $('#title_post').on('keyup', app.checkUri);
+            $('#slug_post').on('keyup', app.checkUri);
             app.getTags();
-            $('#title_post').liTranslit({
-                elAlias: $('#slug_post')
-            });
+            // $('#title_post').liTranslit({
+            //     elAlias: $('#slug_post')
+            // });
             tinymce.init({
-                selector: 'textarea',
-                height: 250,
-                plugins: [
-                    'advlist autolink lists link image charmap print preview anchor',
-                    'searchreplace visualblocks code fullscreen',
-                    'insertdatetime media table contextmenu paste code'
-                ]
+                selector: '.ide',
+                height: 250
+
             });
 
         },
@@ -33,10 +29,15 @@
                 url: url,
                 data: $(this).serialize()
             }).done(function (data) {
-                var arr = JSON.parse(data);
-                alert(arr.message);
+                var response  = JSON.parse(data);
+                if(response.status === 'fail' || response.status ==='error'){
+                    alert(response.message);
+                }else if(response.status === 'success'){
+                    document.location.href  = '/admin';
+                }
+
             });
-            $(this).trigger("reset");
+
 
         },
         checkUri: function (e) {

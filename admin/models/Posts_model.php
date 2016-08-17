@@ -4,6 +4,11 @@ class Posts_model extends CI_Model
 {
     var $table = 'posts';
     var $per_page = 5;
+    public $rules = array(
+            'title' => array('field'=>'title', 'label' => 'Title', 'rules' => 'trim|required|max_length[100]'),
+            'uri'   => array('field' => 'uri', 'label' => 'Slug', 'rules' => 'trim|required|max_length[100]|callback__unique_slug'),
+            'text'  => array('field' => 'text', 'labels' => 'Body', 'rules' =>'trim')
+    );
 
     function __construct()
     {
@@ -22,7 +27,7 @@ class Posts_model extends CI_Model
     {
         $this->db->where($this->table . '.is_deleted', 0);
         return $this->db
-            ->select('posts.id, posts.title,posts.short_text, posts.text, posts.is_visible')
+            ->select('posts.id, posts.title, posts.uri, posts.short_text, posts.text, posts.is_visible')
             ->from($this->table)
             ->where('id', $id)
             ->limit(1)
@@ -70,6 +75,13 @@ class Posts_model extends CI_Model
             ->select('id')
             ->from('posts')
             ->where('uri', $uri)
+            ->get()->row();
+    }
+    
+    public function unique_slug(){
+        return $this->db
+            ->select('id')
+            ->from('posts')
             ->get()->row();
     }
     

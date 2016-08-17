@@ -60,7 +60,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('database', 'Mustache','pagination','DX_Auth');
+$autoload['libraries'] = array('database', 'Mustache', 'pagination', 'DX_Auth');
 
 if(ENVIRONMENT === 'development' OR (isset($_COOKIE['idebug']) AND $_COOKIE['idebug'] == 'jgA5iuYNdnggTJiBujEU1N4mgNvvo8IZ7N43oUAE'))
 {
@@ -93,7 +93,7 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url','generic');
+$autoload['helper'] = array('url','generic',);
 
 
 /*

@@ -9,6 +9,8 @@ class Posts extends CI_Controller
         parent::__construct();
         $this->load->model('posts_model', 'posts');
         $this->load->model('tags_model', 'tags');
+        $this->load->library('form_validation');
+
     }
 
     public function index()
@@ -24,48 +26,30 @@ class Posts extends CI_Controller
 
     public function edit_post($id = false)
     {
-        if ($id && $data['post'] = $this->posts->get($id)) {
-            $data['tags'] = $this->tags->get_tag($id);
-            $this->mustache->parse_view('content', 'edit_post/edit_post', $data);
-            $this->mustache->render();
-        } else {
-            show_404();
-        }
+
 
     }
 
     //TODO: make normal msg
     public function update_post($id = false)
     {
-        if ($id) {
-            $query = $this->generic->get_post('title, uri, short_text, text, is_visible');
-            $tags = $this->generic->get_post('tags');
-            if ($this->posts->update_post($query, $id)) {
-                $this->tags->new_update_tags($id, $tags);
-                
-                $this->output->set_output(json_encode(array('message' => 'all good')));
-            } else {
-                $this->output->set_output(json_encode(array('message' => 'something wrong')));
-            }
-        }
+        $this->add($id);
     }
 
 
-//TODO: make normal msg
-    public function add_post()
+    public function add_post($id = NULL)
     {
-        $query = $this->generic->get_post('title,uri,short_text,text,is_visible');
-        $tags = $this->input->post('tags');
-        $new_post_id = $this->posts->add_post($query);
-        if ($new_post_id) {
-            if (!empty($tags)) {
-                $this->tags->new_add_tags($new_post_id, $tags);
-            }
-            $this->output->set_output(json_encode(['message' => 'all good']));
+        if (!$id) {
+            $this->add();
         } else {
-            $this->output->set_output(json_encode(['message' => 'something wrong']));
+            if ($data['post'] = $this->posts->get($id)) {
+                $data['tags'] = $this->tags->get_tag($id);
+                $this->mustache->parse_view('content', 'edit_post/edit_post', $data);
+                $this->mustache->render();
+            } else {
+                show_404();
+            }
         }
-
     }
 
 //TODO: make normal msg
@@ -100,6 +84,58 @@ class Posts extends CI_Controller
             $this->output->set_output(json_encode(['tags' => $array]));
         } else {
             $this->output->set_output(json_encode(['tags' => '']));
+        }
+    }
+
+    public function _unique_slug($str)
+    {
+        // Do NOT validate if slug already exists
+        // UNLESS it's the slug for the current page
+        $id = $this->uri->segment(3);
+        $this->db->where('uri', $this->input->post('uri'));
+        !$id || $this->db->where('id !=', $id);
+        $page = $this->posts->unique_slug();
+
+        if ($page[$id] == $id || count($page)) {
+            $this->form_validation->set_message('_unique_slug', '%s should be unique');
+            return FALSE;
+        }
+
+        return TRUE;
+    }
+
+
+    function add($id = NULL)
+    {
+        // Initialise rules for validate
+        $rules = $this->posts->rules;
+        $this->form_validation->set_rules($rules);
+
+        if ($this->form_validation->run() == TRUE) {
+            $query = $this->generic->get_post('title, uri, short_text, text, is_visible');
+            $tags = $this->input->post('tags');
+            if ($id ? $this->posts->update_post($query, $id) : $new_post_id = $this->posts->add_post($query)) {
+                if (!empty($tags)) {
+                    $id ? $this->tags->new_update_tags($id, $tags) : $this->tags->new_add_tags($new_post_id, $tags);
+                }
+                $this->output->set_output(json_encode([
+                    'status' => 'success',
+                    'data' => NULL,
+                    'message' => 'all good'
+                ]));
+            } else {
+                $this->output->set_output(json_encode([
+                    'status' => 'error',
+                    'data' => NULL,
+                    'message' => 'something wrong'
+                ]));
+            }
+        } else {
+            $this->output->set_output(json_encode([
+                'status' => 'fail',
+                'data' => NULL,
+                'message' => validation_errors(' ', ' ')
+            ]));
         }
     }
 
