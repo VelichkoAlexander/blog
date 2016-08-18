@@ -19,8 +19,10 @@ class Tags_model extends CI_Model
     {
         if (!$uri) {
             return $this->db
-                ->select('id, uri, title')
+                ->select('tags.id, tags.uri, tags.title')
                 ->from('tags')
+                ->distinct()
+                ->join('tags_posts_rel', 'tags_posts_rel.tag_id = tags.id')
                 ->get()->result_array();
         } else {
             return $this->db
@@ -40,6 +42,7 @@ class Tags_model extends CI_Model
         return $this->db
             ->select('posts.uri, posts.title, posts.short_text, posts.created')
             ->from('posts')
+
             ->join('tags_posts_rel', 'tags_posts_rel.post_id = posts.id')
             ->join('tags', 'tags.id = tags_posts_rel.tag_id')
             ->where('tags.uri', $uri)
