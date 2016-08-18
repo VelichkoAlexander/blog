@@ -96,7 +96,7 @@ class Posts extends CI_Controller
         !$id || $this->db->where('id !=', $id);
         $page = $this->posts->unique_slug();
 
-        if ($page[$id] == $id || count($page)) {
+        if ( count($page)) {
             $this->form_validation->set_message('_unique_slug', '%s should be unique');
             return FALSE;
         }
