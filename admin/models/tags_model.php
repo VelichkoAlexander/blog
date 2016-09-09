@@ -8,6 +8,11 @@ class Tags_model extends CI_Model
         parent::__construct();
     }
 
+
+    /**
+     * @param $id number    post id
+     * @return array        all tags for post
+     */
     public function get_post_tags($id)
     {
         return $this->db
@@ -18,6 +23,11 @@ class Tags_model extends CI_Model
             ->get()->result_array();
     }
 
+    /**
+     * @param $id number    current post id
+     * @param $like string  for search tags
+     * @return mixed
+     */
     public function get_tags($id, $like)
     {
         $subquery = $this->db

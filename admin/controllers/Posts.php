@@ -13,7 +13,7 @@ class Posts extends CI_Controller
 
     public function index()
     {
-
+        redirect('http://blog.dev/admin/');
     }
 
     public function new_post()
@@ -22,35 +22,27 @@ class Posts extends CI_Controller
         $this->mustache->render();
     }
 
-    public function edit_post($id = false)
-    {
-    }
-
     //TODO: make normal msg
     public function update_post($id = false)
     {
         $this->add($id);
     }
 
-
-    public function add_post($id = NULL)
+    //TODO: make error massage
+    public function update($id = NULL)
     {
-        if (!$id) {
-            $this->add();
-        } else {
-            if ($data['post'] = $this->posts->get($id)) {
-                $data['tags'] = $this->tags->get_post_tags($id);
+        if ($data['post'] = $this->posts->get($id)) {
+            $data['tags'] = $this->tags->get_post_tags($id);
 
-                $this->mustache->parse_view('content', 'edit_post/edit_post', $data);
-                $this->mustache->render();
-            } else {
-                show_404();
-            }
+            $this->mustache->parse_view('content', 'edit_post/edit_post', $data);
+            $this->mustache->render();
+        } else {
+            show_404();
         }
     }
 
-//TODO: make normal msg
-    public function del_post($id = false)
+    //TODO: make normal msg
+    public function delete($id = false)
     {
         if ($id && $data['result'] = $this->posts->delete($id)) {
             redirect('/');
@@ -61,7 +53,6 @@ class Posts extends CI_Controller
 
     public function check_uri($uri = false)
     {
-
         if ($uri && $data = $this->posts->check_uri($uri)) {
             $this->output->set_output(json_encode(['uri' => '1']));
         } else {
@@ -70,11 +61,9 @@ class Posts extends CI_Controller
 
     }
 
-    public function get_tags($id=false)
+    public function get_tags($id = false)
     {
-        $propArray = $this->input->post(array('id','q'));
-//        var_dump($propArray);
-//        die;
+        $propArray = $this->input->post(array('id', 'q'));
         if ($propArray['id'] && $propArray['q'] && $data = $this->tags->get_tags($propArray['id'], $propArray['q'])) {
             $this->sent_msg('success', $data, 'all good');
         } else {
@@ -99,7 +88,7 @@ class Posts extends CI_Controller
         return TRUE;
     }
 
-
+    //TODO: remake
     function add($id = NULL)
     {
         // Initialise rules for validate
