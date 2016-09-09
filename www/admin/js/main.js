@@ -10,10 +10,46 @@
         setUpListeners: function () {
             $('#add_post').on('submit', app.submitForm);
             $('#slug_post').on('keyup', app.checkUri);
-            app.getTags();
-            // $('#title_post').liTranslit({
-            //     elAlias: $('#slug_post')
-            // });
+            $('select[name="tags"]').select2({
+                tags: true,
+                tokenSeparators: [',', ' '],
+                ajax: {
+                    url: "http://blog.dev//admin/posts/get_tags/6",
+                    method: 'POST',
+                    dataType: 'json',
+                    delay: 250,
+                    data: function (params) {
+                        return {
+                            q: params.term, // search term
+                            id: function () {
+                                app.getTags();
+                            },
+                            page: params.page
+                        };
+                    },
+                    processResults: function (data, params) {
+                        // parse the results into the format expected by Select2
+                        // since we are using custom formatting functions we do not need to
+                        // alter the remote JSON data, except to indicate that infinite
+                        // scrolling can be used
+                        return {
+                            results: data.data,
+                            // pagination: {
+                            //     more: (params.page * 30) < data.total_count
+                            // }
+                        };
+                    },
+                    cache: true
+                },
+
+                minimumInputLength: 2,
+
+            });
+            $('#title_post').liTranslit({
+                elAlias: $('#slug_post')
+            });
+            // app.getTags();
+
             tinymce.init({
                 selector: '.ide',
                 height: 250
@@ -23,20 +59,22 @@
         },
         submitForm: function (e) {
             var url = $(this).attr('action');
+            var dataSent = $(this).serialize();
+            console.log(dataSent);
             e.preventDefault();
-            $.ajax({
-                type: "POST",
-                url: url,
-                data: $(this).serialize()
-            }).done(function (data) {
-                var response  = JSON.parse(data);
-                if(response.status === 'fail' || response.status ==='error'){
-                    alert(response.message);
-                }else if(response.status === 'success'){
-                    document.location.href  = '/admin';
-                }
+            // $.ajax({
+            //     type: "POST",
+            //     url: url,
+            //     data: dataSent
+            // }).done(function (data) {
+            //     var response  = JSON.parse(data);
+            //     if(response.status === 'fail' || response.status ==='error'){
+            //         alert(response.message);
+            //     }else if(response.status === 'success'){
+            //         document.location.href  = '/admin';
+            //     }
 
-            });
+            // });
 
 
         },
@@ -62,18 +100,24 @@
 
         },
         getTags: function () {
-            var url = '/admin/posts/get_tags';
-            $.ajax({
-                url: url
-            }).done(function (data) {
-                return $('#myTags').tagit({
-                    availableTags: JSON.parse(data)['tags'],
-                    autocomplete: {delay: 0, minLength: 2},
-                    showAutocompleteOnFocus: false,
-                    fieldName: "tags[]"
-                });
-            })
-
+            var url = window.location.pathname;
+            var post_id = (url[url.length - 1]);
+            if (+post_id > 0) {
+                return post_id;
+                //     $.ajax({
+                //         method : 'POST',
+                //         url: preparedUrl,
+                //         data: {id: post_id, tag: 'tag12'}
+                //     }).done(function (data) {
+                //         console.log(data);
+                //         return $('select[name="tags"]').select2({
+                //             tags: true,
+                //             data: JSON.parse(data).data,
+                //             tokenSeparators: [',', ' ']
+                //         });
+                //     })
+                // }
+            }
         }
 
     };

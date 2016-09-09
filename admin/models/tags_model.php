@@ -8,26 +8,30 @@ class Tags_model extends CI_Model
         parent::__construct();
     }
 
-    public function index()
-    {
-        echo 'tags';
-    }
-
-    public function get_tag($id)
+    public function get_post_tags($id)
     {
         return $this->db
-            ->select('tags.id,tags.title')
+            ->select('tags.id,tags.title as text')
             ->from('tags')
             ->join('tags_posts_rel', 'tags_posts_rel.tag_id = tags.id')
             ->where('tags_posts_rel.post_id', $id)
             ->get()->result_array();
     }
 
-    public function get_tags()
+    public function get_tags($id, $like)
     {
+        $subquery = $this->db
+            ->select('tag_id')
+            ->from('tags_posts_rel')
+            ->where('post_id', $id)
+            ->get_compiled_select();
+
         return $this->db
-            ->select('title')
+            ->select('id, title as text')
             ->from('tags')
+            ->where("`id` NOT IN ($subquery)", NULL, FALSE)
+            ->like('title', $like, 'right')
+            ->limit(10)
             ->get()->result_array();
     }
 
@@ -61,7 +65,7 @@ class Tags_model extends CI_Model
 
     }
 
-    public function new_add_tags($post_id, $arr)
+    public function add_tags($post_id, $arr)
     {
         $exists_tags = [];
         $prepared_add_rel = [];
@@ -94,7 +98,7 @@ class Tags_model extends CI_Model
         $this->rel_tag($prepared_ids);
     }
 
-    public function new_update_tags($post_id, $arr)
+    public function update($post_id, $arr)
     {
         $exists_tags = [];
         $prepared_add_rel = [];

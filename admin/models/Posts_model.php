@@ -43,7 +43,7 @@ class Posts_model extends CI_Model
             ->get()->result_array();
     }
 
-    public function del_post($id)
+    public function delete($id)
     {
         return $this->db
             ->limit(1)
@@ -52,7 +52,7 @@ class Posts_model extends CI_Model
             ->update($this->table);
     }
 
-    public function add_post($data)
+    public function add($data)
     {
         $this->db
             ->limit(1)
@@ -60,7 +60,7 @@ class Posts_model extends CI_Model
         return $this->db->insert_id();
     }
 
-    public function update_post($data, $id)
+    public function update($data, $id)
     {
         return $this->db
             ->limit(1)
