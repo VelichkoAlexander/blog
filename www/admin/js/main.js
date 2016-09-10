@@ -10,17 +10,18 @@
         setUpListeners: function () {
             $('#add_post').on('submit', app.submitForm);
             $('#slug_post').on('keyup', app.checkUri);
-            $('select[name="tags"]').select2({
+            $('.select2_tags').select2({
                 tags: true,
                 tokenSeparators: [',', ' '],
+                minimumInputLength: 2,
+                multiple: true,
                 ajax: {
-                    url: "http://blog.dev//admin/posts/get_tags/6",
-                    method: 'POST',
+                    url: "/admin/posts/get_tags/",
                     dataType: 'json',
                     delay: 250,
                     data: function (params) {
                         return {
-                            q: params.term, // search term
+                            q: params.term,
                             id: function () {
                                 app.getTags();
                             },
@@ -28,98 +29,85 @@
                         };
                     },
                     processResults: function (data, params) {
-                        // parse the results into the format expected by Select2
-                        // since we are using custom formatting functions we do not need to
-                        // alter the remote JSON data, except to indicate that infinite
-                        // scrolling can be used
                         return {
                             results: data.data,
-                            // pagination: {
-                            //     more: (params.page * 30) < data.total_count
-                            // }
                         };
                     },
                     cache: true
                 },
-
-                minimumInputLength: 2,
-
             });
+
             $('#title_post').liTranslit({
                 elAlias: $('#slug_post')
             });
-            // app.getTags();
-
             tinymce.init({
                 selector: '.ide',
                 height: 250
 
             });
-
+            $()
+            $('.delete-btn').on('click', app.deletPost)
         },
         submitForm: function (e) {
             var url = $(this).attr('action');
-            var dataSent = $(this).serialize();
+            var dataSent = $(this).serializeArray();
             console.log(dataSent);
             e.preventDefault();
-            // $.ajax({
-            //     type: "POST",
-            //     url: url,
-            //     data: dataSent
-            // }).done(function (data) {
-            //     var response  = JSON.parse(data);
-            //     if(response.status === 'fail' || response.status ==='error'){
-            //         alert(response.message);
-            //     }else if(response.status === 'success'){
-            //         document.location.href  = '/admin';
-            //     }
-
-            // });
-
-
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: dataSent
+            }).done(function (data) {
+                var response = JSON.parse(data);
+                if (response.status === 'fail' || response.status === 'error') {
+                    alert(response.message);
+                } else {
+                    alert(response.message);
+                    document.location.href = '/admin';
+                }
+            });
         },
         checkUri: function (e) {
             var uri = $(this).val(),
                 url = '/admin/posts/check_uri/',
-                slug = $('#slug_post'),
-                btn = $('button[type=submit]');
-            btn.attr('disabled');
-
+                slug = $('#slug_post');
             $.ajax({
+                dataType: 'json',
                 url: url + uri
             }).done(function (data) {
-                var arr = JSON.parse(data);
+                var arr = data;
                 if (+arr.uri) {
                     slug.parent().removeClass('has-success').addClass('has-error');
-                    btn.attr('disabled', 'disabled');
-                } else if (!+arr.uri) {
+                } else {
                     slug.parent().removeClass('has-error').addClass('has-success');
-                    btn.removeAttr('disabled');
                 }
             });
 
         },
         getTags: function () {
-            var url = window.location.pathname;
-            var post_id = (url[url.length - 1]);
+            var post_id = $('#id').val();
             if (+post_id > 0) {
                 return post_id;
-                //     $.ajax({
-                //         method : 'POST',
-                //         url: preparedUrl,
-                //         data: {id: post_id, tag: 'tag12'}
-                //     }).done(function (data) {
-                //         console.log(data);
-                //         return $('select[name="tags"]').select2({
-                //             tags: true,
-                //             data: JSON.parse(data).data,
-                //             tokenSeparators: [',', ' ']
-                //         });
-                //     })
-                // }
+            }
+        },
+        deletPost: function (e) {
+            e.preventDefault();
+            var delButton = e.target;
+            var url = $(delButton).attr('href');
+            if (confirm('Are you sure you want to delete this record')) {
+                $.ajax({
+                    dataType: 'json',
+                    url: url
+                }).done(function (data) {
+                    if (data.status === 'success') {
+                        alert(data.message);
+                        $(delButton).parent().parent().remove()
+                    } else {
+                        alert(data.message);
+                    }
+                });
             }
         }
-
     };
     app.initialize();
 }());

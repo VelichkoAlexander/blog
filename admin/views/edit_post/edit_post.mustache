@@ -80,7 +80,7 @@
                                         <div class="form-group">
                                             <label>Slug</label>
                                             <input id="slug_post" class="form-control" name="uri" placeholder="" value="{{uri}}"
-                                                   >
+                                                   disabled="disabled" >
                                         </div>
                                         <div class="form-group">
                                             <label>Preview</label>
@@ -89,9 +89,9 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Tags</label>
-                                            <select class="form-control select2" name="tags" multiple="true">
+                                            <select class="form-control select2_tags"  name="tags[]" multiple="true">
                                                 {{#tags}}
-                                                    <option value="{{id}}" selected>{{text}}</option>
+                                                    <option value={{id}} selected>{{text}}</option>
                                                  {{/tags}}
                                             </select>
                                         </div>
@@ -109,6 +109,8 @@
                                             <label>Post text</label>
                                             <textarea class="form-control ide" name="text" rows="3">{{text}}</textarea>
                                         </div>
+                                        <input type="hidden" id="id" name="id" value="{{id}}">
+                                        <input type="hidden" name="tags_id" value="{{#tags}}{{id}},{{/tags}}">
                                         <button type="submit" class="btn btn-default">Update</button>
                                     </form>
                                 {{/post}}

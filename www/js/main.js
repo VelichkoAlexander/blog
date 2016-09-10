@@ -18,7 +18,8 @@
                 modal = $('#modal-form'),
                 comments = $('.comments'),
                 id = $('.id').data('id'),
-                form = $(this);
+                form = $(this);                    
+                form = $(this);                    
             e.preventDefault();
             $.ajax({
                 type: "POST",

@@ -13,7 +13,7 @@ class Posts extends CI_Controller
 
     public function index()
     {
-        redirect('http://blog.dev/admin/');
+        redirect(site_url('/admin'));
     }
 
     public function new_post()
@@ -22,13 +22,6 @@ class Posts extends CI_Controller
         $this->mustache->render();
     }
 
-    //TODO: make normal msg
-    public function update_post($id = false)
-    {
-        $this->add($id);
-    }
-
-    //TODO: make error massage
     public function update($id = NULL)
     {
         if ($data['post'] = $this->posts->get($id)) {
@@ -40,30 +33,27 @@ class Posts extends CI_Controller
             show_404();
         }
     }
-
-    //TODO: make normal msg
     public function delete($id = false)
     {
         if ($id && $data['result'] = $this->posts->delete($id)) {
-            redirect('/');
+            $this->sent_msg($status = 'success', $data = 'NULL', $message = 'your post successfully deleted');
         } else {
-            redirect('/');
+            $this->sent_msg();
         }
     }
 
     public function check_uri($uri = false)
     {
         if ($uri && $data = $this->posts->check_uri($uri)) {
-            $this->output->set_output(json_encode(['uri' => '1']));
+            $this->sent_msg('success', array('uri' => '1'), 'uri exist');
         } else {
-            $this->output->set_output(json_encode(['uri' => '0']));
+            $this->sent_msg('success', array('uri' => '0'), 'uri do not exist ');
         }
-
     }
 
-    public function get_tags($id = false)
+    public function get_tags()
     {
-        $propArray = $this->input->post(array('id', 'q'));
+        $propArray = $this->input->get(array('id', 'q'));
         if ($propArray['id'] && $propArray['q'] && $data = $this->tags->get_tags($propArray['id'], $propArray['q'])) {
             $this->sent_msg('success', $data, 'all good');
         } else {
@@ -73,8 +63,6 @@ class Posts extends CI_Controller
 
     public function _unique_slug($str)
     {
-        // Do NOT validate if slug already exists
-        // UNLESS it's the slug for the current page
         $id = $this->uri->segment(3);
         $this->db->where('uri', $this->input->post('uri'));
         !$id || $this->db->where('id !=', $id);
@@ -84,12 +72,10 @@ class Posts extends CI_Controller
             $this->form_validation->set_message('_unique_slug', '%s should be unique');
             return FALSE;
         }
-
         return TRUE;
     }
 
-    //TODO: remake
-    function add($id = NULL)
+    function add()
     {
         // Initialise rules for validate
         $rules = $this->posts->rules;
@@ -97,10 +83,37 @@ class Posts extends CI_Controller
         //validate
         if ($this->form_validation->run()) {
             $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible'));
-            $tags = $this->input->post('tags');
-            if ($id ? $this->posts->update($query, $id) : $new_post_id = $this->posts->add($query)) {
-                if (!empty($tags)) {
-                    $id ? $this->tags->update($id, $tags) : $this->tags->add_tags($new_post_id, $tags);
+            $tags = $this->input->post(array('tags', 'tags_id'));
+            if ($id = $this->posts->add($query)) {
+                $tags = $this->tagsTransform($id, $tags);
+                if ($tags['add_tags']) {
+                    $this->tags->update($id, $tags['add_tags']);
+                }
+                $this->sent_msg('success', null, 'all good');
+            } else {
+                $this->sent_msg();
+            }
+        } else {
+            $this->sent_msg('fail', null, validation_errors(' ', ' '));
+        }
+    }
+
+    public function update_post($id = false)
+    {
+        // Initialise rules for validate
+        $rules = $this->posts->rules;
+        $this->form_validation->set_rules($rules);
+        //validate
+        if ($this->form_validation->run()) {
+            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible'));
+            $tags = $this->input->post(array('tags', 'tags_id'));
+            if ($id && $this->posts->update($query, $id)) {
+                $tags = $this->tagsTransform($id, $tags);
+                if ($tags['add_tags']) {
+                    $this->tags->update($id, $tags['add_tags']);
+                }
+                if ($tags['add_del']) {
+                    $this->tags->delete($id, $tags['add_del']);
                 }
                 $this->sent_msg('success', null, 'all good');
             } else {
@@ -113,10 +126,39 @@ class Posts extends CI_Controller
 
     function sent_msg($status = 'error', $data = 'NULL', $message = 'something wrong')
     {
-        $this->output->set_output(json_encode([
+        echo(json_encode([
             'status' => $status,
             'data' => $data,
             'message' => $message
         ]));
+    }
+
+    function tagsTransform($id, $tags)
+    {
+        $newTags = array();
+        $tagsExist = array();
+        if ($tags['tags']) {
+            foreach ($tags['tags'] as $tag) {
+                if (!is_numeric($tag)) {
+                    $newTags[] = $tag;
+                } else {
+                    $tagsExist[] = $tag;
+                }
+            }
+        } else {
+            $tagsExist = [];
+        }
+        if ($newTags && $newTagsId = $this->tags->add($newTags)) {
+            $this->tags->update($id, $newTagsId);
+        }
+        if ($tags['tags_id']) {
+            $tags['tags_id'] = substr($tags['tags_id'], 0, -1);
+            $tags['tags_id'] = explode(',', $tags['tags_id']);
+        } else {
+            $tags['tags_id'] = [];
+        }
+        $add_tags = array_diff($tagsExist, $tags['tags_id']);
+        $add_del = array_diff($tags['tags_id'], $tagsExist);
+        return array('add_tags' => $add_tags, 'add_del' => $add_del);
     }
 }

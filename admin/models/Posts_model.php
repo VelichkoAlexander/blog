@@ -75,18 +75,18 @@ class Posts_model extends CI_Model
             ->select('id')
             ->from('posts')
             ->where('uri', $uri)
-            ->get()->row();
+            ->count_all_results();
     }
-    
+
     public function unique_slug(){
         return $this->db
             ->select('id')
             ->from('posts')
             ->get()->row();
     }
-    
-    
-    
+
+
+
 
 
 
