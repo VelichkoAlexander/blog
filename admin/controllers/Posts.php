@@ -18,7 +18,7 @@ class Posts extends CI_Controller
 
     public function new_post()
     {
-        $this->mustache->write_view('content', 'edit_post/add_post');
+        $this->mustache->write_view('content', 'add_post/add_post');
         $this->mustache->render();
     }
 
@@ -53,8 +53,8 @@ class Posts extends CI_Controller
 
     public function get_tags()
     {
-        $propArray = $this->input->get(array('id', 'q'));
-        if ($propArray['id'] && $propArray['q'] && $data = $this->tags->get_tags($propArray['id'], $propArray['q'])) {
+        $propArray = $this->input->get(array('id', 'q', 'id_tags'));
+        if ($propArray['id'] && $propArray['q'] && $data = $this->tags->get_tags($propArray['id'], $propArray['q'], $propArray['id_tags'])) {
             $this->sent_msg('success', $data, 'all good');
         } else {
             $this->sent_msg('error', []);
@@ -82,7 +82,7 @@ class Posts extends CI_Controller
         $this->form_validation->set_rules($rules);
         //validate
         if ($this->form_validation->run()) {
-            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible'));
+            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible','meta_keywords','meta_description'));
             $tags = $this->input->post(array('tags', 'tags_id'));
             if ($id = $this->posts->add($query)) {
                 $tags = $this->tagsTransform($id, $tags);
@@ -105,7 +105,7 @@ class Posts extends CI_Controller
         $this->form_validation->set_rules($rules);
         //validate
         if ($this->form_validation->run()) {
-            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible'));
+            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible','meta_keywords','meta_description'));
             $tags = $this->input->post(array('tags', 'tags_id'));
             if ($id && $this->posts->update($query, $id)) {
                 $tags = $this->tagsTransform($id, $tags);
@@ -137,7 +137,7 @@ class Posts extends CI_Controller
     {
         $newTags = array();
         $tagsExist = array();
-        if ($tags['tags']) {
+        if ($tags['tags'] && is_array($tags['tags']) ) {
             foreach ($tags['tags'] as $tag) {
                 if (!is_numeric($tag)) {
                     $newTags[] = $tag;

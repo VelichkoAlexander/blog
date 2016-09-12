@@ -24,7 +24,7 @@ class Posts_model extends CI_Model
         return $this->db
             ->select('id, title, text, created, meta_keywords, meta_description')
             ->from($this->table)
-            ->where($this->table . '.uri', $uri)
+            ->where('uri', $uri)
             ->limit(1)
             ->get()->row_array();
     }

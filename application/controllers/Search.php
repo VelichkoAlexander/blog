@@ -15,7 +15,7 @@ class Search extends CI_Controller
 
     public function search_keyword()
     {
-        $keyword = $this->input->post('keyword', TRUE);
+        $keyword = $this->input->post('keyword');
 
         if ($keyword && $data['posts'] = $this->search->search($keyword)) {
             $this->mustache->parse_view('content', 'search/search_view', $data);

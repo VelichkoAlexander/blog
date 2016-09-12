@@ -32,9 +32,9 @@ class Main extends CI_Controller
             $config['next_link'] = '&raquo;';
             $this->pagination->initialize($config);
             $data['pagination'] = $this->pagination->create_links();
-            if ($data['tags'] = $this->tags->get()) {
-            }
+            $data['tags'] = $this->tags->get();
             $data['base_url'] = base_url();
+            set_seo(array('meta_keywords' => 'blog, posts', 'meta_description' => 'Blog'));
             //template
             $this->mustache->parse_view('content', 'main_page/categories_list', $data);
             $this->mustache->render();

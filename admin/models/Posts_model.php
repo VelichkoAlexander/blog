@@ -7,6 +7,8 @@ class Posts_model extends CI_Model
     public $rules = array(
             'title' => array('field'=>'title', 'label' => 'Title', 'rules' => 'trim|required|max_length[100]'),
             'uri'   => array('field' => 'uri', 'label' => 'Slug', 'rules' => 'trim|required|max_length[100]|callback__unique_slug'),
+            'meta_keywords'   => array('field' => 'meta_keywords', 'label' => 'keywords', 'rules' => 'trim|max_length[250]'),
+            'meta_description'   => array('field' => 'meta_description', 'label' => 'description', 'rules' => 'trim|max_length[160]'),
             'text'  => array('field' => 'text', 'labels' => 'Body', 'rules' =>'trim')
     );
 
@@ -27,7 +29,7 @@ class Posts_model extends CI_Model
     {
         $this->db->where($this->table . '.is_deleted', 0);
         return $this->db
-            ->select('posts.id, posts.title, posts.uri, posts.short_text, posts.text, posts.is_visible')
+            ->select('posts.id, posts.title, posts.uri, posts.short_text, posts.text, posts.is_visible, posts.meta_keywords, posts.meta_description')
             ->from($this->table)
             ->where('id', $id)
             ->limit(1)

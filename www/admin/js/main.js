@@ -22,9 +22,8 @@
                     data: function (params) {
                         return {
                             q: params.term,
-                            id: function () {
-                                app.getTags();
-                            },
+                            id: app.getId,
+                            id_tags: app.getTags,
                             page: params.page
                         };
                     },
@@ -84,11 +83,21 @@
             });
 
         },
-        getTags: function () {
+        getId: function () {
             var post_id = $('#id').val();
             if (+post_id > 0) {
                 return post_id;
             }
+        },
+        getTags: function () {
+            var tags = $('.select2_tags option:selected');
+            var arrTags = [];
+            $.each(tags, function(index, value) {
+                if(app.isNumeric($(value).val()) && $(value).val() !== $(value).text()){
+                    arrTags[index] = $(value).val();
+                }
+            });
+                return arrTags;
         },
         deletPost: function (e) {
             e.preventDefault();
@@ -107,6 +116,9 @@
                     }
                 });
             }
+        },
+        isNumeric: function (n) {
+        return !isNaN(parseFloat(n)) && isFinite(n);
         }
     };
     app.initialize();

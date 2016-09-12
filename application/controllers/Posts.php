@@ -28,7 +28,6 @@ class Posts extends CI_Controller
             $this->breadcrumbs->push('Main page', '/');
             $this->breadcrumbs->push($data['title'], ' ');
             $data['bread'] = $this->breadcrumbs->show();
-            set_smm($data);
             set_seo($data);
             $this->mustache->parse_view('content', 'items/view', $data);
             $this->mustache->render();

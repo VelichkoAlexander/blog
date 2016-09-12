@@ -18,8 +18,7 @@
                 modal = $('#modal-form'),
                 comments = $('.comments'),
                 id = $('.id').data('id'),
-                form = $(this);                    
-                form = $(this);                    
+                form = $(this);
             e.preventDefault();
             $.ajax({
                 type: "POST",
@@ -36,7 +35,7 @@
                 }
             });
             form.find('button[type=submit]').prop("disabled", true);
-            setTimeout(form_disable, 5000, form, false);
+            setTimeout(form_disable, 5000);
             $(this).trigger("reset");
 
             function form_disable(form, status) {
