@@ -44,18 +44,28 @@
                 height: 250
 
             });
-            $()
-            $('.delete-btn').on('click', app.deletPost)
+            $('.delete-btn').on('click', app.deletPost);
+            $('#post_img').ajaxfileupload({
+                action: '/admin/upload/do_upload/',
+                onComplete: function(response) {
+                    $('#img_name').val(response.upload_data);
+                    // console.log(JSON.stringify(response));
+                },
+                onStart: function() {
+                },
+                onCancel: function() {
+                    console.log('no file selected');
+                }
+            });
         },
         submitForm: function (e) {
             var url = $(this).attr('action');
             var dataSent = $(this).serializeArray();
-            console.log(dataSent);
             e.preventDefault();
             $.ajax({
                 type: "POST",
                 url: url,
-                data: dataSent
+                data: dataSent,
             }).done(function (data) {
                 var response = JSON.parse(data);
                 if (response.status === 'fail' || response.status === 'error') {

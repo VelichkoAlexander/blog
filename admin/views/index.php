@@ -55,6 +55,8 @@
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
+    <script src="/admin/js/jquery.ajaxfileupload.js"></script>
+    <!-- Custom Theme JavaScript -->
     <script src="/admin/js/sb-admin-2.js"></script>
     <script src="/admin/js/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>

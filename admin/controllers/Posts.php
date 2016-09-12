@@ -82,7 +82,7 @@ class Posts extends CI_Controller
         $this->form_validation->set_rules($rules);
         //validate
         if ($this->form_validation->run()) {
-            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible','meta_keywords','meta_description'));
+            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible','meta_keywords','meta_description','image'));
             $tags = $this->input->post(array('tags', 'tags_id'));
             if ($id = $this->posts->add($query)) {
                 $tags = $this->tagsTransform($id, $tags);
@@ -105,7 +105,7 @@ class Posts extends CI_Controller
         $this->form_validation->set_rules($rules);
         //validate
         if ($this->form_validation->run()) {
-            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible','meta_keywords','meta_description'));
+            $query = $this->input->post(array('title', 'uri', 'short_text', 'text', 'is_visible','meta_keywords','meta_description','image'));
             $tags = $this->input->post(array('tags', 'tags_id'));
             if ($id && $this->posts->update($query, $id)) {
                 $tags = $this->tagsTransform($id, $tags);

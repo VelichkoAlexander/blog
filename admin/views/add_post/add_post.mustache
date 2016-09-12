@@ -77,15 +77,17 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Slug</label>
-                                        <input id="slug_post" class="form-control" name="uri" placeholder="" >
+                                        <input id="slug_post" class="form-control" name="uri" placeholder="">
                                     </div>
                                     <div class="form-group">
                                         <label>meta keyword</label>
-                                        <input  type="text" class="form-control" name="meta_keywords" placeholder="" value="">
+                                        <input type="text" class="form-control" name="meta_keywords" placeholder=""
+                                               value="">
                                     </div>
                                     <div class="form-group">
                                         <label>meta description</label>
-                                        <input  type="text" class="form-control" name="meta_description" placeholder="" value="">
+                                        <input type="text" class="form-control" name="meta_description" placeholder=""
+                                               value="">
                                     </div>
                                     <div class="form-group">
                                         <label>Preview</label>
@@ -96,6 +98,11 @@
                                         <label>Tags</label>
                                         <select class="form-control select2_tags" name="tags[]" multiple="true">
                                         </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Upload image preview</label>
+                                        <input class="form-control" type='file' name="image"
+                                        />
                                     </div>
                                     <div class="form-group">
                                         <label>Visibility</label>
@@ -109,6 +116,7 @@
                                         <textarea class="form-control ide" name="text" rows="3"></textarea>
                                     </div>
                                     <input type="hidden" name="tags_id" value="">
+                                    <input class="form-control" id="img_name" type='hidden' name="image"/>
                                     <button type="submit" class="btn btn-default">Submit Button</button>
                                 </form>
                             </div>

@@ -22,6 +22,7 @@ class Posts extends CI_Controller
         if ($uri && $data = $this->posts->get($uri)) {
             $data['created'] = hr_date($data['created']);
             $data['post_tags'] = $this->posts->get_tags($data['id']);
+            $data['base_url'] = base_url();
             $data['tags'] = $this->tags->get();
             $data['comments'] = $this->posts->get_comments($data['id']);
             $data['comments'] = convert_comments_date($data['comments']);

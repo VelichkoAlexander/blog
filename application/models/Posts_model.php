@@ -22,7 +22,7 @@ class Posts_model extends CI_Model
     {
         $this->_visibility_rules($this->table);
         return $this->db
-            ->select('id, title, text, created, meta_keywords, meta_description')
+            ->select('id, title, text, created, meta_keywords, meta_description, image')
             ->from($this->table)
             ->where('uri', $uri)
             ->limit(1)

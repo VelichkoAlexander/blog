@@ -28,7 +28,7 @@ class Tags_model extends CI_Model
      * @param $like string  for search tags
      * @return mixed
      */
-    public function get_tags($id, $like)
+    public function get_tags($id, $like, $ids = false)
     {
         $subquery = $this->db
             ->select('tag_id')
@@ -39,7 +39,7 @@ class Tags_model extends CI_Model
         return $this->db
             ->select('id, title as text')
             ->from('tags')
-            ->where("`id` NOT IN ($subquery)", NULL, FALSE)
+            ->where_not_in('id', $id)
             ->like('title', $like, 'left')
             ->limit(10)
             ->get()->result_array();
